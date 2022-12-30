@@ -1,0 +1,28 @@
+name: deploy on ec2
+on:
+  push:
+    branches: 
+       - main
+
+       
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd /var/www/html/DAFrontend
+          git config --global --add safe.directory /var/www/html/DAFrontend
+           sudo git add .
+           sudo git commit -m "serversidechanges"
+           git pull origin main
+           sudo yarn
+           sudo yarn run build
+           pm2 ls
+           pm2 restart all
