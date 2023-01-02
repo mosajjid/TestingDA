@@ -5,6 +5,8 @@
   --onboard-connect-sidebar-color: white;
 }
 
+$primary-color:#ef981d;
+
 @font-face {
   font-family: helvetica-light;
   src: url("./../../assets/helvetica-light.ttf");
@@ -94,7 +96,7 @@
   padding: 0px;
   max-width: 400px;
   width: 95%;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   background-image: url('./../../assets/images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,9 +104,9 @@
 }
 
 .modal_heading {
-  background: linear-gradient(180deg, #ef981d 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
   border: 0;
-  border-bottom: 1px solid #ef981d;
+  border-bottom: 1px solid $primary-color;
   margin-bottom: 0px;
   border-radius: 10px 10px 0px 0px;
 }
@@ -993,7 +995,7 @@ a {
   padding-bottom: 0px;
 } */
 .navbar_form {
-  border: 2px solid #ef981d;
+  border: 2px solid $primary-color;
   border-radius: 50px;
   flex: 1;
   position: relative;
@@ -1018,7 +1020,7 @@ a {
 #login_form .main_btn,
 .main_btn:hover,
 #login_form .main_btn:hover {
-  background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
   border-radius: 50px;
   display: inline-block;
   padding: 10px 25px;
@@ -1045,7 +1047,7 @@ a {
 }
 
 .border_btn {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   padding: 10px 30px;
   border-radius: 50px;
   font-family: "Montserrat", sans-serif;
@@ -1061,7 +1063,7 @@ a {
 }
 
 .border_btn:hover {
-  background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
   color: #fff !important;
 }
 
@@ -1147,7 +1149,7 @@ header#myHeader {
 
 .sub_menu li .sub-items:hover,
 .sub_menu li .sub-items.active {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 50px;
   color: #fff !important;
 }
@@ -1170,8 +1172,8 @@ header#myHeader {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  border-bottom: 2px solid #ef981d;
-  color: #ef981d;
+  border-bottom: 2px solid $primary-color;
+  color: $primary-color;
 }
 
 .navbar-nav li.nav-item:hover .sub_menu {
@@ -1194,7 +1196,7 @@ header#myHeader {
 .subsocial-icons li a {
   width: 35px;
   height: 35px;
-  background: #ef981d;
+  background: $primary-color;
   margin: 0px 5px;
   display: inline-block;
   line-height: 35px;
@@ -1213,7 +1215,7 @@ header#myHeader {
 /* Wallet Section */
 .wallet_box {
   background: linear-gradient(180deg, #394956 0%, #313f4a 100%);
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 40px;
   transition: 1s ease;
@@ -1222,8 +1224,8 @@ header#myHeader {
 }
 
 .wallet_box:hover {
-  background: linear-gradient(120.91deg, #ef981d 1.08%, #f5aa3e 100.06%);
-  box-shadow: 0px 0px 10px #ef981d;
+  background: linear-gradient(120.91deg, $primary-color 1.08%, #f5aa3e 100.06%);
+  box-shadow: 0px 0px 10px $primary-color;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.05);
 }
 
@@ -1260,7 +1262,7 @@ header#myHeader {
 }
 
 .svg_icon {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   display: inline-block;
   padding: 20px;
   border-radius: 5px;
@@ -1268,7 +1270,7 @@ header#myHeader {
 
 .svg_icon svg,
 .svg_icon svg path {
-  fill: #ef981d;
+  fill: $primary-color;
 }
 
 .border_div {
@@ -1318,7 +1320,7 @@ header#myHeader {
   top: -50px;
   background: linear-gradient(0deg, black, #444444);
   z-index: 1;
-  border: 3px solid #ef981d;
+  border: 3px solid $primary-color;
 }
 
 /* .logoImg_con {
@@ -1483,7 +1485,7 @@ header#myHeader {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #ef981d;
+  color: $primary-color;
 }
 
 /* .collection_text p {
@@ -1496,7 +1498,7 @@ header#myHeader {
 } */
 button.slick-arrow {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
-  background-color: #ef981d !important;
+  background-color: $primary-color !important;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -1527,7 +1529,7 @@ button.slick-arrow.slick-next {
 }
 
 .view_all_bdr {
-  border: 2px solid #ef981d !important;
+  border: 2px solid $primary-color !important;
   padding: 10px 75px;
   border-radius: 50px;
   font-family: "Montserrat", sans-serif;
@@ -1536,7 +1538,7 @@ button.slick-arrow.slick-next {
   font-size: 20px;
   line-height: 22px;
   text-align: center;
-  color: #ef981d !important;
+  color: $primary-color !important;
   text-shadow: 0px 0px 4px rgb(0 0 0 / 40%);
   display: inline-block;
   transition: 0.5s ease;
@@ -1545,9 +1547,9 @@ button.slick-arrow.slick-next {
 }
 
 .view_all_bdr:hover {
-  background: linear-gradient(180deg, #ef981d 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
   color: #fff !important;
-  border: 2px solid #ef981d !important;
+  border: 2px solid $primary-color !important;
 }
 
 /* About Section*/
@@ -1558,7 +1560,7 @@ button.slick-arrow.slick-next {
 }
 
 .about_col {
-  border-left: 5px solid #ef981d;
+  border-left: 5px solid $primary-color;
   border-radius: 5px;
   padding: 5px 20px;
   height: 100%;
@@ -1643,7 +1645,7 @@ button.slick-arrow.slick-next {
   font-weight: 500;
   font-size: 18px;
   line-height: inherit;
-  color: #ef981d;
+  color: $primary-color;
 }
 
 /* Items */
@@ -1673,7 +1675,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .items_slide:hover {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
 }
 
 .items_info {
@@ -1728,7 +1730,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 } */
 .items_profileimg span {
   background: #28353e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 85px;
   padding: 5px 10px;
   font-family: "Montserrat";
@@ -1765,7 +1767,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 /* Footer */
 .footer-dark {
-  border-top: 5px solid #ef981d;
+  border-top: 5px solid $primary-color;
   background: #0d171e;
 }
 
@@ -1837,7 +1839,7 @@ input#txt_subscribe {
 }
 
 button#btn-subscribe {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 0px 5px 5px 0px;
   height: 45px;
   position: absolute;
@@ -1901,7 +1903,7 @@ button#btn-subscribe i.arrow_right {
   font-weight: 700;
   font-size: 60px;
   line-height: 116.4%;
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .box-login {
@@ -1931,12 +1933,12 @@ button#btn-subscribe i.arrow_right {
 }
 
 .box-login a {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 #login_form input {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 5px;
   min-height: 45px;
@@ -1999,7 +2001,7 @@ label {
 .contact_form input,
 .contact_form input:focus {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   height: 45px;
   color: #fff;
@@ -2008,7 +2010,7 @@ label {
 .contact_form textarea,
 .contact_form textarea:focus {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   color: #fff;
   color: #fff;
@@ -2017,11 +2019,11 @@ label {
 .form-control:focus {
   color: #fff;
   /* background-color: #fff; */
-  border-color: #ef981d;
+  border-color: $primary-color;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(255 141 2);
   background: #0d171e;
-  border: 1px solid #ef981d !important;
+  border: 1px solid $primary-color !important;
   border-radius: 5px;
 }
 
@@ -2077,7 +2079,7 @@ label {
 }
 
 .tab_btn li button.active {
-  border-bottom: 2px solid #ef981d;
+  border-bottom: 2px solid $primary-color;
 }
 
 /** Marketplace-Collection **/
@@ -2114,7 +2116,7 @@ label {
 }
 
 .market_btn {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 0px 5px 5px 0px;
   border: 0px;
   width: 80px;
@@ -2173,7 +2175,7 @@ button.filter_btn {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   color: #fff;
   height: 45px;
   border-radius: 40px;
@@ -2181,7 +2183,7 @@ button.filter_btn {
 }
 
 button.filter_btn.active {
-  background: #ef981d;
+  background: $primary-color;
 }
 
 .market_div {
@@ -2208,7 +2210,7 @@ button.filter_btn.active {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 10px;
 }
 
@@ -2227,7 +2229,7 @@ button.filter_btn.active {
   text-align: center;
   white-space: nowrap;
   transition: width 0.6s ease;
-  background: linear-gradient(90deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(90deg, $primary-color 0%, #f9bf50 100%);
   border-radius: 33px;
 }
 
@@ -2237,7 +2239,7 @@ button.filter_btn.active {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  color: #ef981d;
+  color: $primary-color;
   margin-bottom: 5px;
 }
 
@@ -2264,7 +2266,7 @@ button.filter_btn.active {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background: linear-gradient(180deg, #ef981d 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
   border-radius: 60px;
   padding: 10px 40px;
 }
@@ -2288,7 +2290,7 @@ button.filter_btn.active {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .nft_details h1 {
@@ -2317,7 +2319,7 @@ button.filter_btn.active {
 }
 
 .owner_by p span {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .add_wishlist {
@@ -2396,7 +2398,7 @@ button.filter_btn.active {
 }
 
 .asset_detail {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .nft_detailnumber {
@@ -2416,7 +2418,7 @@ button.filter_btn.active {
 
 .nft_detailnumber li span {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 39px;
   height: 50px;
@@ -2456,7 +2458,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #ef981d;
+  color: $primary-color;
   display: flex;
 }
 
@@ -2466,7 +2468,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #ef981d;
+  color: $primary-color;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -2576,7 +2578,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .yellow_dot {
-  background: #ef981d;
+  background: $primary-color;
 }
 
 .lightblue_dot {
@@ -2660,7 +2662,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   width: 100%;
   border-radius: 100%;
   object-fit: cover;
-  border: 3px solid #ef981d;
+  border: 3px solid $primary-color;
 }
 
 .collection_pick .check_img {
@@ -2691,16 +2693,16 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_social li:hover {
-  /* background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);transition: 1s ease; */
-  color: #ef981d;
-  box-shadow: 0 0 10px #ef981d;
-  text-shadow: 0 0 10px #ef981d;
+  /* background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);transition: 1s ease; */
+  color: $primary-color;
+  box-shadow: 0 0 10px $primary-color;
+  text-shadow: 0 0 10px $primary-color;
   border-radius: 100%;
 }
 
 .collection_social li:hover::before {
   transform: scale(1.5);
-  box-shadow: 0 0 15px #ef981d;
+  box-shadow: 0 0 15px $primary-color;
 }
 
 .collection_social li::before {
@@ -2711,7 +2713,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ef981d;
+  background: $primary-color;
   transition: .5s;
   transform: scale(.9);
   z-index: -1;
@@ -2724,16 +2726,16 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_social li i.fa {
-  color: #ef981d;
+  color: $primary-color;
   transition: 1s ease;
 }
 
 .collection_social li:hover i.fa {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .coppycode span {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   display: inline-block;
   padding: 10px 20px;
   border-radius: 40px;
@@ -2835,7 +2837,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .item_active .active {
-  background: #ef981d;
+  background: $primary-color;
   padding: 12px 35px;
   border: 0;
   font-family: "Montserrat";
@@ -2846,7 +2848,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   align-items: center;
   justify-content: center;
   min-width: 185px;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
 }
 
 .item_btn img,
@@ -2856,13 +2858,13 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 .item_active a {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 40px;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 18px;
-  color: #ef981d;
+  color: $primary-color;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2896,19 +2898,19 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_items:hover {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   /* box-shadow: 2px 2px 5px rgb(239 152 29 / 70%); */
   box-shadow: rgb(239 153 31) -5px 5px, rgb(239 153 31 / 30%) -10px 10px;
   transform: scale(1.03);
 }
 
 .collection_items:hover .buy_btn {
-  background: linear-gradient(180deg, #ef981d 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
   color: #fff !important;
 }
 
 .form-select:focus {
-  border-color: #ef981d;
+  border-color: $primary-color;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(239 152 29 / 25%);
 }
@@ -2919,7 +2921,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 .buy_btn {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
   border-radius: 60px;
@@ -2927,14 +2929,14 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   font-weight: 500;
   font-size: 12px;
   text-align: center;
-  color: #ef981d;
+  color: $primary-color;
   padding: 3px 25px;
   display: inline-block;
   transition: .5s ease;
 }
 
 .buy_btn:hover {
-  background: linear-gradient(180deg, #ef981d 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
   color: #fff !important;
 }
 
@@ -2994,7 +2996,7 @@ span.lastone {
 
 /* Author page */
 .edit_btn {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 39px;
   width: 60px;
   height: 60px;
@@ -3007,7 +3009,7 @@ span.lastone {
 }
 
 button.img_edit_btn {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 39px;
   width: 45px;
   height: 45px;
@@ -3095,7 +3097,7 @@ button.img_edit_btn {
 }
 
 .author_cart li button.active {
-  border-bottom: 2px solid #ef981d;
+  border-bottom: 2px solid $primary-color;
 }
 
 .author_cart .dropdown-menu li {
@@ -3344,7 +3346,7 @@ span.special_text {
 }
 
 .usersidebar li .active {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .usersidebar li .active svg,
@@ -3353,7 +3355,7 @@ span.special_text {
 .usersidebar li:hover svg,
 .usersidebar li:hover path,
 .usersidebar li:hover g {
-  fill: #ef981d;
+  fill: $primary-color;
 }
 
 .notification_list h6,
@@ -3387,7 +3389,7 @@ span.special_text {
 
 button.yellow_btn.yellow_dark {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    linear-gradient(180deg, #ef981d 66.67%, #f9bf50 100%);
+    linear-gradient(180deg, $primary-color 66.67%, #f9bf50 100%);
   border: rgba(0, 0, 0, 0.5);
 }
 
@@ -3481,14 +3483,14 @@ button.yellow_btn.yellow_dark {
 
 .pageprev.disabled span.page-link {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 50px 0px 0px 50px;
 }
 
 .pagination .page-link {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
 }
 
@@ -3507,8 +3509,8 @@ button.yellow_btn.yellow_dark {
 }
 
 .pagination .page-item.active .page-link {
-  background: #ef981d;
-  border: 1px solid #ef981d;
+  background: $primary-color;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
 }
 
@@ -3524,7 +3526,7 @@ button.yellow_btn.yellow_dark {
 }
 
 .contact_bg {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 5px;
 }
 
@@ -3561,12 +3563,12 @@ button.yellow_btn.yellow_dark {
 }
 
 .contact_without_bg i.fa {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .contact_without_bg li a:hover,
 .contact_without_bg li:hover {
-  color: #ef981d !important;
+  color: $primary-color !important;
 }
 
 .contact_details h4 {
@@ -3644,11 +3646,11 @@ button.yellow_btn.yellow_dark {
 }
 
 .date_task .link_btn {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .link_btn {
-  color: #ef981d;
+  color: $primary-color;
   background: transparent;
   padding: 0px;
   border: 0;
@@ -3662,7 +3664,7 @@ button.yellow_btn.yellow_dark {
 .form_comment input,
 .form_comment textarea {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 5px;
   color: #fff;
@@ -3680,7 +3682,7 @@ button.yellow_btn.yellow_dark {
 }
 
 .bottom_border {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 10px 1px;
   width: 88px;
   height: 5px;
@@ -3690,7 +3692,7 @@ button.yellow_btn.yellow_dark {
 
 .btn_ylo,
 .btn_ylo:hover {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 50px;
   padding: 10px 20px;
   display: inline-block;
@@ -3728,7 +3730,7 @@ button.yellow_btn.yellow_dark {
 
 form.help_form {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 50px;
   position: relative;
   display: flex;
@@ -3760,8 +3762,8 @@ form.help_form input:focus {
 }
 
 button#btn-submit {
-  background: #ef981d;
-  border: 1px solid #ef981d;
+  background: $primary-color;
+  border: 1px solid $primary-color;
   border-radius: 0px 50px 50px 0px;
   font-size: 50px;
   color: #fff;
@@ -3774,7 +3776,7 @@ button#btn-submit {
 
 .feature-box {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 40px;
   transition: 2s ease;
@@ -3784,7 +3786,7 @@ button#btn-submit {
 }
 
 .feature-box:hover {
-  background: linear-gradient(180deg, #ef981d 53.11%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 53.11%, #f9bf50 100%);
   border-radius: 10px;
 }
 
@@ -3803,7 +3805,7 @@ button#btn-submit {
 }
 
 .hlp-btn {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 49px;
   display: inline-block;
   padding: 10px 70px;
@@ -3816,7 +3818,7 @@ button#btn-submit {
 
 .feature-box:hover .hlp-btn {
   background: #fff;
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .promoted_div h4 {
@@ -3854,7 +3856,7 @@ button#btn-submit {
 }
 
 .mint_tab .nav-link.active::after {
-  border-bottom: 5px solid #ef981d;
+  border-bottom: 5px solid $primary-color;
   content: "";
   display: block;
   position: relative;
@@ -3873,7 +3875,7 @@ button#btn-submit {
 }
 
 .cartqt {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 100%;
   position: absolute;
   bottom: -5px;
@@ -3888,7 +3890,7 @@ button#btn-submit {
 }
 
 .square_yello {
-  background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
   border-radius: 5px;
   display: inline-block;
   padding: 10px 20px;
@@ -3915,7 +3917,7 @@ button#btn-submit {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .sub_div {
@@ -3949,7 +3951,7 @@ button#btn-submit {
 
 .mintevent {
   background: #0d171e;
-  border: 2.5px solid #ef981d;
+  border: 2.5px solid $primary-color;
   border-radius: 20px;
   max-width: 600px;
   margin: auto;
@@ -3957,7 +3959,7 @@ button#btn-submit {
 }
 
 .start_btn {
-  background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
   border: 2px solid #bd712e;
   border-radius: 10px;
   display: inline-block;
@@ -4000,7 +4002,7 @@ button#btn-submit {
 }
 
 .connect_wallet_btn {
-  background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
   border-radius: 10px;
   font-family: "Montserrat";
   font-weight: 600;
@@ -4017,7 +4019,7 @@ button#btn-submit {
 }
 
 .mintprice {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 10px;
   font-family: "Roboto";
   font-style: normal;
@@ -4048,7 +4050,7 @@ button#btn-submit {
 }
 
 .qt_selector button {
-  background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
   border-radius: 5px;
   font-family: "Roboto";
   font-style: normal;
@@ -4062,12 +4064,12 @@ button#btn-submit {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
 }
 
 .qt_selector input[type="text"] {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   font-family: "Roboto";
   font-style: normal;
@@ -4082,7 +4084,7 @@ button#btn-submit {
 }
 
 .mint_btn button {
-  background: linear-gradient(180deg, #ef981d 26.56%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 26.56%, #f9bf50 100%);
   border: 1px solid #394956;
   border-radius: 10px;
   padding: 10px;
@@ -4258,11 +4260,11 @@ button#btn-submit {
 
 /* universal css*/
 .bg_yellow {
-  background: #ef981d;
+  background: $primary-color;
 }
 
 .title_color {
-  color: #ef981d;
+  color: $primary-color;
   background-color: transparent;
 }
 
@@ -4282,12 +4284,12 @@ button#btn-submit {
 .title_bottom_border {
   height: 3px;
   width: 60px;
-  background: #ef981d;
+  background: $primary-color;
   display: inline-block;
 }
 
 .mint_time {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -4345,7 +4347,7 @@ button#btn-submit {
 
 .mint_date {
   background: #0d171e;
-  border: 2px solid #ef981d;
+  border: 2px solid $primary-color;
   border-radius: 10px;
   font-family: "Montserrat";
   font-style: normal;
@@ -4392,8 +4394,8 @@ iframe {
 .yellow_btn {
   width: 180px;
   height: 45px;
-  background: #ef981d;
-  border: 1px solid #ef981d;
+  background: $primary-color;
+  border: 1px solid $primary-color;
   border-radius: 50px;
   font-family: "Montserrat";
   font-style: normal;
@@ -4408,7 +4410,7 @@ button.border_btn {
   width: max-content;
   height: 45px;
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 50px;
 }
@@ -4436,7 +4438,7 @@ button.border_btn {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .mr10 {
@@ -4489,11 +4491,11 @@ button.border_btn {
 
 .nav-link:focus,
 .nav-link:hover {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 a:hover {
-  color: #ef981d !important;
+  color: $primary-color !important;
 }
 
 .event_slider .slick-slide.slick-active {
@@ -4529,7 +4531,7 @@ a:hover {
   font-weight: 500;
   font-size: 20px;
   color: #fff;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   display: block;
   padding: 10px;
@@ -4574,7 +4576,7 @@ a:hover {
 }
 
 .view_slide {
-  color: #ef981d;
+  color: $primary-color;
   font-size: 20px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -4583,8 +4585,8 @@ a:hover {
 }
 
 .last_slide:hover {
-  background: linear-gradient(120.91deg, #ef981d 1.08%, #f5aa3e 100.06%);
-  box-shadow: 0px 0px 10px #ef981d;
+  background: linear-gradient(120.91deg, $primary-color 1.08%, #f5aa3e 100.06%);
+  box-shadow: 0px 0px 10px $primary-color;
 }
 
 .last_slide:hover .view_slide {
@@ -4628,7 +4630,7 @@ a:hover {
 
 .author_cart .dropdown-menu li .dropdown-item:hover,
 .author_cart .dropdown-menu li .dropdown-item.active {
-  background: #ef981d;
+  background: $primary-color;
   border-radius: 50px;
   color: #fff !important;
   font-style: normal;
@@ -4644,12 +4646,12 @@ a:hover {
 }
 
 .author_cart .dropdown-menu li .dropdown-item svg {
-  fill: #ef981d;
+  fill: $primary-color;
 }
 
 .filter {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 30px;
   display: flex;
@@ -5218,12 +5220,12 @@ a:hover {
   width: 100%;
   padding: 6px;
   font-weight: 700;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   transition: all 0.1s ease;
 }
 
 .search_view_all:hover {
-  background: linear-gradient(180deg, #ef981d 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
   color: #fff !important;
 }
 
@@ -5238,7 +5240,7 @@ a:hover {
 
 .filter {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 30px;
   display: none;
@@ -5293,12 +5295,12 @@ a:hover {
 .status_ul li:hover,
 .status_ul li.filter_border.active {
   color: #fff;
-  background-color: #ef981d;
+  background-color: $primary-color;
 }
 
 .filter_border {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   display: inline-block;
   font-family: "Montserrat";
@@ -5318,7 +5320,7 @@ a:hover {
 
 .filter_apply {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   display: block;
   font-family: "Montserrat";
@@ -5342,7 +5344,7 @@ a:hover {
 
 .range_input input.form-control {
   background: #0d171e;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   width: 45%;
   color: #fff;
@@ -5405,7 +5407,7 @@ a:hover {
 }
 
 [type="radio"]:checked+label {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 [type="radio"]:not(:checked)+label {
@@ -5432,7 +5434,7 @@ a:hover {
   content: "";
   width: 12px;
   height: 12px;
-  background: #ef981d;
+  background: $primary-color;
   position: absolute;
   top: 3px;
   left: 3px;
@@ -5498,7 +5500,7 @@ a:hover {
 
 .modal-content {
   /* background: #0d171e; */
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   background-image: url("./../../assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -5519,9 +5521,9 @@ a:hover {
 }
 
 .marketplace .modal-header {
-  background: linear-gradient(180deg, #ef981d 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
   border: 0;
-  border-bottom: 1px solid #ef981d;
+  border-bottom: 1px solid $primary-color;
 }
 
 .input_design {
@@ -5549,7 +5551,7 @@ a:hover {
 .marketplace .navbtn {
   color: rgba(0, 0, 0, 0.6);
   background: none;
-  border: 2px solid #ef981d;
+  border: 2px solid $primary-color;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -5563,7 +5565,7 @@ a:hover {
 
 .marketplace .navbtn.active {
   color: #fff;
-  background: linear-gradient(180deg, #ef981d 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
 }
 
 .marketplace .navbtn i.fa {
@@ -5602,7 +5604,7 @@ a:hover {
   background: transparent !important;
   pointer-events: none;
   border-radius: 0px !important;
-  border-bottom: 0.5px solid #ef981d !important;
+  border-bottom: 0.5px solid $primary-color !important;
   text-align: left;
   font-size: 24px !important;
   text-transform: uppercase;
@@ -5611,7 +5613,7 @@ a:hover {
 }
 
 .buy_now {
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   padding: 10px 30px;
   border-radius: 50px;
   font-family: "Montserrat", sans-serif;
@@ -5625,14 +5627,14 @@ a:hover {
   display: inline-block;
   transition: 0.5s ease;
   margin-right: 12px;
-  background-color: #ef981d !important;
+  background-color: $primary-color !important;
   color: #fff;
   transition: all 0.1s ease;
 }
 
 .buy_now:hover {
   background-color: #0d171e !important;
-  color: #ef981d !important;
+  color: $primary-color !important;
 }
 
 .fixed_header {
@@ -5780,9 +5782,9 @@ a:hover {
   display: block;
   text-align: center;
   color: #fff !important;
-  background: linear-gradient(180deg, #ef981d 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
   border-radius: 30px;
-  border: 2px solid #ef981d !important;
+  border: 2px solid $primary-color !important;
   letter-spacing: normal;
   outline: 0;
   font-weight: 800;
@@ -5795,7 +5797,7 @@ a:hover {
 }
 
 .btn-main:hover {
-  color: #ef981d !important;
+  color: $primary-color !important;
   background: transparent;
 }
 
@@ -6024,7 +6026,7 @@ section.svelte-1mh1h9 {
 }
 
 .Autherpagetab svg {
-  fill: #ef981d;
+  fill: $primary-color;
 }
 
 .author_cart li .Autherpagetab button {
@@ -6042,8 +6044,8 @@ section.svelte-1mh1h9 {
 
 .author_cart li .Autherpagetab button:hover,
 .author_cart li .Autherpagetab button.active {
-  border-bottom: 0px solid #ef981d;
-  background: #ef981d;
+  border-bottom: 0px solid $primary-color;
+  background: $primary-color;
   border-radius: 50px;
   color: #fff !important;
   font-style: normal;
@@ -6083,13 +6085,13 @@ section.svelte-1mh1h9 {
 }
 
 .usersidebar .nav-link.active {
-  color: #ef981d;
+  color: $primary-color;
 }
 
 .usersidebar .nav-link.active svg,
 .usersidebar .nav-link.active path,
 .usersidebar .nav-link.active g {
-  fill: #ef981d !important;
+  fill: $primary-color !important;
 }
 
 /* .usersidebar li .active svg, 
@@ -6154,7 +6156,7 @@ model-viewer {
 
 .img_3d canvas {
   object-fit: contain;
-  border: 1px solid #ef981d;
+  border: 1px solid $primary-color;
   border-radius: 10px;
 }
 
@@ -6191,7 +6193,7 @@ model-viewer {
 }
 
 .border-bottom-5 {
-  border-bottom: 5px solid #ef981d;
+  border-bottom: 5px solid $primary-color;
 }
 
 .table-responsive::-webkit-scrollbar-thumb {
@@ -6219,7 +6221,7 @@ model-viewer {
 }
 
 .box button.btn-main:hover {
-  color: #ef981d !important;
+  color: $primary-color !important;
 }
 
 .form-control:disabled {
@@ -6251,7 +6253,7 @@ model-viewer {
 
 button.custom_close {
   border: 0px;
-  background: #ef981d;
+  background: $primary-color;
   color: #fff;
   border-radius: 100%;
   line-height: inherit;
@@ -6270,7 +6272,7 @@ button.custom_close {
   padding: 30px;
   max-width: 560px;
   position: relative;
-  border: 5px solid #ef981d;
+  border: 5px solid $primary-color;
   box-sizing: border-box;
   width: 100%;
   top: 50%;
@@ -6288,7 +6290,7 @@ button.custom_close {
   display: flex;
   align-items: center;
   padding-bottom: 25px;
-  border-bottom: 1px dotted #ef981d;
+  border-bottom: 1px dotted $primary-color;
 }
 
 .minting li:last-child {
@@ -6628,7 +6630,7 @@ button.custom_close {
 }
 
 #mc_embed_signup .button {
-  background-color: #ef981d !important;
+  background-color: $primary-color !important;
   border-radius: 0px 5px 5px 0px !important;
   height: 45px !important;
   position: absolute;
@@ -6841,7 +6843,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 /**Custom progress bar color **/
 
 model-viewer {
-  --progress-bar-color: #ef981d;
+  --progress-bar-color: $primary-color;
 }
 
 
@@ -6881,20 +6883,20 @@ model-viewer {
 }
 
 .MuiPickersToolbar-toolbar, .MuiPickerDTTabs-tabs, .MuiPickersDay-daySelected, .MuiPickersClockPointer-pointer, .MuiPickersClock-pin, .MuiPickersClockPointer-thumb{
-  background: #ef981d !important;
+  background: $primary-color !important;
 }
 .MuiPickersClockPointer-thumb{
-  border: 14px solid #ef981d !important;
+  border: 14px solid $primary-color !important;
 }
 .MuiButton-textPrimary, .MuiTypography-colorPrimary{
-  color:#ef981d !important;
+  color:$primary-color !important;
 }
 .MuiTabs-scroller.MuiTabs-fixed .MuiTabs-indicator {
   background-color: #ffffff !important;
 }
 button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
   color: #ffffff !important;
-  background: linear-gradient(180deg, #ef981d 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
 }
 
 .MuiFormHelperText-root.Mui-error {
@@ -6939,3 +6941,36 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
 .mp-search{
   background-color: #27353f !important;
 }
+
+.hunter-market{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 34px;
+  color: #fff;
+  }
+
+  .main-title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 112.4%;
+  }
+  .btn-banner {
+      background: linear-gradient(180deg, $primary-color 56.77%, #F9BF50 100%);
+      border-radius: 50px;
+      border: 0;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #fff;
+      padding: 10px 50px;
+      transition: .5s ease-in-out;
+  }
+  .btn-banner:hover {background: #fff;}
+  

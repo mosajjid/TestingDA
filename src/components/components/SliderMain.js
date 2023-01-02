@@ -1,7 +1,7 @@
 import React from "react";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import "../components-css/sliderMain.css";
+import "../components-css/App.scss";
 import { Link } from "react-router-dom";
 
 const fadeInUp = keyframes`
