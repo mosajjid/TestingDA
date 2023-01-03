@@ -254,9 +254,7 @@ div#content {
   box-shadow: 0 1px 3px 0 #364a6326;
   background-color: $white-color;
   padding: 30px;
-  /* background: linear-gradient(180deg,#394956,#25323c 76.04%,#0d171e);
-    border: 3px solid #313f4a;
-
+  
 }
 
 .navbar-badge {
@@ -848,7 +846,7 @@ tbody td {
   color: $white-color !important;
   background: linear-gradient(180deg, $secondary-color 54.17%, #f9bf50 100%);
   border-radius: 30px;
-  border: 2px solid $secondary-color !important;
+  border: 2px solid $secondary-color;
   letter-spacing: normal;
   outline: 0;
   font-weight: 800;
@@ -1385,7 +1383,7 @@ button.btn.btn-admin.text-light.import_btns {
   color: $white-color !important;
   background: linear-gradient(180deg, $secondary-color 54.17%, #f9bf50 100%);
   border-radius: 30px;
-  border: 2px solid $secondary-color !important;
+  border: 2px solid $secondary-color ;
   letter-spacing: normal;
   outline: 0;
   font-weight: 800;

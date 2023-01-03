@@ -14,6 +14,7 @@ import AddMintableCollection from "./components/pages/AddMintableCollection"
 import NotificationPopup from "./components/components/NotificationPopup";
 import Admins1 from "./components/pages/admins";
 import AddColor from "./components/pages/addColors";
+import AddLogo from "./components/pages/addLogo";
 import { NotificationContainer, NotificationManager } from "react-notifications";
 import withLogin from "./components/components/withLogin";
 import Error404 from "./components/pages/Error404";
@@ -96,6 +97,7 @@ function App() {
 
             {currentUser || isSuperAdmin() ? <Route path="admins" exact element={<Admins />} /> : <Route path="/" />}
             {currentUser || isSuperAdmin() ? <Route path="addColor" exact element={<AddColor />} /> : <Route path="/" />}
+            {currentUser || isSuperAdmin() ? <Route path="addColor" exact element={<AddLogo />} /> : <Route path="/" />}
 
             {isSuperAdmin() ? <Route path="AddMintableCollections" exact element={<AddMintableCollections />} /> : <Route path="/" />}
 

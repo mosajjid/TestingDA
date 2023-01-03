@@ -1322,3 +1322,31 @@ export const checkAuthorization = async () => {
     return err;
   }
 };
+
+export const changeBackground = async (data) => {
+  let formData = new FormData();
+
+ console.log("change background is called");
+  formData.append("userProfile", data.profilePic ? data.profilePic : "");
+
+  const requestOptions = {
+    method: "POST",
+    //headers: {
+    //  Authorization: getHeaders(),
+    //},
+    body: formData,
+  };
+  try {
+    let response = await fetch(
+      process.env.REACT_APP_API_BASE_URL + "/admin/changeBackground",
+      requestOptions
+    );
+    const isJson = response.headers
+      .get("content-type")
+      ?.includes("application/json");
+    const datas = isJson && (await response.json());
+    return datas.message;
+  } catch (err) {
+    return err;
+  }
+};

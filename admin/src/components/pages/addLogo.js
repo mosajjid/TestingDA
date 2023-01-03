@@ -26,7 +26,7 @@ import {slowRefresh} from "../../helpers/NotifyStatus";
 
 import ColorPicker from "react-pick-color";
 
-const AddColor=() => {
+const AddLogo=() => {
 	const [color,setColor]=useState("#fff");
 	const [secondaryColor,setSecondaryColor]=useState("#fff")
 	const [profilePic, setProfilePic] = useState("");
@@ -74,34 +74,21 @@ const AddColor=() => {
 	
 	  };
 	  
-	let jsonData = {}
-	let style= " .text-yellow {color: "+color+" !important;} \n .sidebar path { fill: "+color+" !important; }\n .btn-admin {background: linear-gradient(180deg, "+color+", "+secondaryColor+" )!important;}\n .svg_icon path{ fill: "+color+" !important;}\n .app-main{background-image:url('"+name+"') !important}\n .btn-main{background: linear-gradient(180deg, "+color+", "+secondaryColor+" )!important; border: 2px solid "+color+" !important;}\n .round-btn{background-color: "+color+" !important;}\n .title_color {color: "+color+" !important;}\n .btn-banner {    background: linear-gradient(180deg,"+color+" 56.77%, "+secondaryColor+" 100%) !important;}\n .main_btn{    background: linear-gradient(180deg,"+color+" 56.77%, "+secondaryColor+" 100%) !important;}\n .navbar_form{border: 2px solid "+color+" !important;}\n .wallet_box{ border: 1px solid  "+color+"!important;} "
-
 	return (
 		<div className="wrapper">
 			{/* <!-- Sidebar  --> */}
 			<Sidebar />
 
         <div className="addColor__main">
-			<h4 className="text-light">Primary Color</h4>
-		<ColorPicker color={color} onChange={(color) => {
-				setColor(color.hex)
-				console.log("color change is called",color.hex)
-			}} />
-				<h4 className="text-light">Secondary Color</h4>
-			<ColorPicker color={secondaryColor} onChange={(color) => {
-				setSecondaryColor(color.hex)
-				console.log("color change is called",color.hex)
-			}} />
-
+			
 			<button
 				className="btn   text-light round-btn"
 				type="button"
 				onClick={async () => {
 					await handleUpdateProfile()
-					jsonData.completeCss = style
-					let res=await addColor(jsonData);
-					console.log("color is send",color)
+					//jsonData.completeCss = style
+					//let res=await addColor(jsonData);
+					//console.log("color is send",color)
 					window.location.reload()
 					
 				}}
@@ -131,7 +118,7 @@ const AddColor=() => {
 
 	);
 };
-export default AddColor;
+export default AddLogo;
 
 
 
