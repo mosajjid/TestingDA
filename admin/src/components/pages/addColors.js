@@ -30,7 +30,7 @@ const AddColor=() => {
 	const [color,setColor]=useState("#fff");
 	const [secondaryColor,setSecondaryColor]=useState("#fff")
 	const [profilePic, setProfilePic] = useState("");
-	const [name,setName]=useState("http://localhost:3000/image/main_bg.png")
+	const [name,setName]=useState(`${process.env.REACT_APP_API}image/main_bg.png`)
 	
 	
 
@@ -39,7 +39,7 @@ const AddColor=() => {
 	const handleImageUpload = (e) => {
 		const [file] = e.target.files;
 		
-		setName(`http://localhost:3000/image/${ e.target.files[0].name}`)
+		setName(`${process.env.REACT_APP_API}image/${ e.target.files[0].name}`)
 		
 		if (e.target.files && e.target.files[0]) {
 		  let img = e.target.files[0];

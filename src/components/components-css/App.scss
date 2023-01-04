@@ -6,10 +6,12 @@
 }
 
 $primary-color:#ef981d;
+$secondary-color:#50f991;
+$font-family:helvetica-light;
 
 @font-face {
   font-family: helvetica-light;
-  src: url("./../../assets/helvetica-light.ttf");
+  src: url("./../../assets/"+$font-family+".ttf");
 }
 
 @-webkit-keyframes scale-up-center {
@@ -104,7 +106,7 @@ $primary-color:#ef981d;
 }
 
 .modal_heading {
-  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
   border: 0;
   border-bottom: 1px solid $primary-color;
   margin-bottom: 0px;
@@ -1020,7 +1022,7 @@ a {
 #login_form .main_btn,
 .main_btn:hover,
 #login_form .main_btn:hover {
-  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   border-radius: 50px;
   display: inline-block;
   padding: 10px 25px;
@@ -1063,7 +1065,7 @@ a {
 }
 
 .border_btn:hover {
-  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   color: #fff !important;
 }
 
@@ -1547,7 +1549,7 @@ button.slick-arrow.slick-next {
 }
 
 .view_all_bdr:hover {
-  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
   color: #fff !important;
   border: 2px solid $primary-color !important;
 }
@@ -2229,7 +2231,7 @@ button.filter_btn.active {
   text-align: center;
   white-space: nowrap;
   transition: width 0.6s ease;
-  background: linear-gradient(90deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(90deg, $primary-color 0%, $secondary-color 100%);
   border-radius: 33px;
 }
 
@@ -2266,7 +2268,7 @@ button.filter_btn.active {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
   border-radius: 60px;
   padding: 10px 40px;
 }
@@ -2693,7 +2695,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_social li:hover {
-  /* background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);transition: 1s ease; */
+  /* background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);transition: 1s ease; */
   color: $primary-color;
   box-shadow: 0 0 10px $primary-color;
   text-shadow: 0 0 10px $primary-color;
@@ -2905,7 +2907,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_items:hover .buy_btn {
-  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
   color: #fff !important;
 }
 
@@ -2936,7 +2938,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .buy_btn:hover {
-  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
   color: #fff !important;
 }
 
@@ -3389,7 +3391,7 @@ span.special_text {
 
 button.yellow_btn.yellow_dark {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    linear-gradient(180deg, $primary-color 66.67%, #f9bf50 100%);
+    linear-gradient(180deg, $primary-color 66.67%, $secondary-color 100%);
   border: rgba(0, 0, 0, 0.5);
 }
 
@@ -3786,7 +3788,7 @@ button#btn-submit {
 }
 
 .feature-box:hover {
-  background: linear-gradient(180deg, $primary-color 53.11%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 53.11%, $secondary-color 100%);
   border-radius: 10px;
 }
 
@@ -3890,7 +3892,7 @@ button#btn-submit {
 }
 
 .square_yello {
-  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   border-radius: 5px;
   display: inline-block;
   padding: 10px 20px;
@@ -3959,7 +3961,7 @@ button#btn-submit {
 }
 
 .start_btn {
-  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   border: 2px solid #bd712e;
   border-radius: 10px;
   display: inline-block;
@@ -4002,7 +4004,7 @@ button#btn-submit {
 }
 
 .connect_wallet_btn {
-  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   border-radius: 10px;
   font-family: "Montserrat";
   font-weight: 600;
@@ -4050,7 +4052,7 @@ button#btn-submit {
 }
 
 .qt_selector button {
-  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   border-radius: 5px;
   font-family: "Roboto";
   font-style: normal;
@@ -4084,7 +4086,7 @@ button#btn-submit {
 }
 
 .mint_btn button {
-  background: linear-gradient(180deg, $primary-color 26.56%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 26.56%, $secondary-color 100%);
   border: 1px solid #394956;
   border-radius: 10px;
   padding: 10px;
@@ -5225,7 +5227,7 @@ a:hover {
 }
 
 .search_view_all:hover {
-  background: linear-gradient(180deg, $primary-color 56.77%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
   color: #fff !important;
 }
 
@@ -5521,7 +5523,7 @@ a:hover {
 }
 
 .marketplace .modal-header {
-  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
   border: 0;
   border-bottom: 1px solid $primary-color;
 }
@@ -5565,7 +5567,7 @@ a:hover {
 
 .marketplace .navbtn.active {
   color: #fff;
-  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
 }
 
 .marketplace .navbtn i.fa {
@@ -5782,7 +5784,7 @@ a:hover {
   display: block;
   text-align: center;
   color: #fff !important;
-  background: linear-gradient(180deg, $primary-color 54.17%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
   border-radius: 30px;
   border: 2px solid $primary-color !important;
   letter-spacing: normal;
@@ -6896,7 +6898,7 @@ model-viewer {
 }
 button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
   color: #ffffff !important;
-  background: linear-gradient(180deg, $primary-color 0%, #f9bf50 100%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
 }
 
 .MuiFormHelperText-root.Mui-error {
@@ -6959,7 +6961,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
       line-height: 112.4%;
   }
   .btn-banner {
-      background: linear-gradient(180deg, $primary-color 56.77%, #F9BF50 100%);
+      background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
       border-radius: 50px;
       border: 0;
       font-family: 'Montserrat';

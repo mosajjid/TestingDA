@@ -1350,3 +1350,33 @@ export const changeBackground = async (data) => {
     return err;
   }
 };
+
+export const addLogo = async (data) => {
+  let formData = new FormData();
+
+ console.log("change logo is called",data);
+  formData.append("logoImage", data.logoImage ? data.logoImage : "");
+  formData.append("name",'mosajjid');
+  console.log("formdata is called------->",formData)
+
+  const requestOptions = {
+    method: "POST",
+    //headers: {
+    //  Authorization: getHeaders(),
+    //},
+    body: formData,
+  };
+  try {
+    let response = await fetch(
+      process.env.REACT_APP_API_BASE_URL + "/admin/addLogo",
+      requestOptions
+    );
+    const isJson = response.headers
+      .get("content-type")
+      ?.includes("application/json");
+    const datas = isJson && (await response.json());
+    return datas.message;
+  } catch (err) {
+    return err;
+  }
+};

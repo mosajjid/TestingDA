@@ -85,7 +85,7 @@ const SliderMain = () => (
           duration={1500}
           triggerOnce
         >
-          <img src="./img/misc/newHome.png" className="lazy img-fluid" alt="" />
+          <img src={`${process.env.REACT_APP_API}image/banner.jpg`} className="lazy img-fluid" alt="" />
         </Reveal>
       </div>
     </div>

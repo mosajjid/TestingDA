@@ -428,7 +428,7 @@ const Header = function () {
       <nav className="navbar navbar-expand-lg">
         <div className="nav-container container">
           <Link className="navbar-brand" to="/">
-            <img src={"../img/logo.svg"} className="img-fluid d-block" alt="" />
+            <img src={`${process.env.REACT_APP_API}image/logo.png`} className="img-fluid d-block" alt="" />
           </Link>
           <button
             className="navbar-toggler"
