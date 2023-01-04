@@ -72,8 +72,8 @@ const App = (props) => {
   }, [currentUser])
 
 
-  return (
-    <SkeletonTheme baseColor="#202020" highlightColor="#444">
+  return (<div className="app-main">
+  <SkeletonTheme baseColor="#202020" highlightColor="#444">
       <Router>
         <Header />
         <Routes>
@@ -137,6 +137,8 @@ const App = (props) => {
       </Router>
 
     </SkeletonTheme>
+  </div>
+    
   );
 };
 

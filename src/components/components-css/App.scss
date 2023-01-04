@@ -4,10 +4,11 @@
   --onboard-wallet-columns: 1;
   --onboard-connect-sidebar-color: white;
 }
+@import "variable";
 
-$primary-color:#ef981d;
-$secondary-color:#50f991;
-$font-family:helvetica-light;
+//$primary-color:#ef981d;
+//$secondary-color:#50f991;
+//$font-family:helvetica-light;
 
 @font-face {
   font-family: helvetica-light;
@@ -52,6 +53,15 @@ $font-family:helvetica-light;
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.app-main{
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 50% 50%; */
+  background-color: rgb(0, 0, 0);
+}
+
 
 .App-header {
   background-color: #282c34;
