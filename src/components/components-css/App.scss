@@ -4,16 +4,25 @@
   --onboard-wallet-columns: 1;
   --onboard-connect-sidebar-color: white;
 }
+
+
 @import "variable";
 
 //$primary-color:#ef981d;
 //$secondary-color:#50f991;
 //$font-family:helvetica-light;
 
+
+
 @font-face {
-  font-family: helvetica-light;
-  src: url("./../../assets/"+$font-family+".ttf");
+  font-family: $font-family;
+  src: url($ttf_file_url);
 }
+  
+//@font-face {
+//  font-family: helvetica-light;
+//  src: url("./../../assets/"+$font-family+".ttf");
+//}
 
 @-webkit-keyframes scale-up-center {
   0% {
@@ -55,7 +64,7 @@
 }
 
 .app-main{
-  background-image: url("../../assets/images/background.jpg");
+  background-image: url($images_path+"assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: 50% 50%; */
@@ -103,13 +112,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: $white-color;
   border-radius: 10px;
   padding: 0px;
   max-width: 400px;
   width: 95%;
   border: 1px solid $primary-color;
-  background-image: url('./../../assets/images/background.jpg');
+  background-image: url($images_path+"assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -170,6 +179,16 @@
   margin: auto;
 }
 
+.headerBaanner{
+  background-image: url($images_path+"assets/images/bannerImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+}
+.mintBackground{
+  background-image: url($images_path+"assets/images/mint_bg.jpg");
+}
 .loader-div {
   position: absolute;
   width: 100vw;
@@ -186,7 +205,7 @@
 
 .loader-div1 p {
   position: absolute;
-  color: #fff;
+  color: $white-color;
   font-size: 22px;
   font-weight: 700;
   top: 59%;
@@ -198,7 +217,7 @@
   position: absolute;
   transition: opacity 0.3s;
   z-index: 999;
-  background-image: url("./../../assets/logo.svg");
+  background-image: url($images_path+"assets/images/logo.svg");
   width: 65px;
   height: 70px;
   animation: spin 1.1s linear infinite;
@@ -224,7 +243,7 @@
   z-index: 1001;
   height: 95vh;
   text-align: left;
-  background: #fff;
+  background: $white-color;
   border: none;
   box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 20%), 1px 3px 15px 2px rgb(0 0 0 / 20%);
   transform-origin: 50% 25%;
@@ -309,7 +328,7 @@
 
 .BsPencilSquare:hover {
   background-color: #8364e2;
-  color: #fff;
+  color: $white-color;
   padding: 4px;
   border-radius: 4px;
   cursor: pointer;
@@ -350,7 +369,7 @@
   height: auto;
   max-height: 75vh;
   min-height: 35vh;
-  background: #fff;
+  background: $white-color;
   border-radius: 16px;
   padding: 20px;
   border: none;
@@ -414,7 +433,7 @@
 }
 
 table {
-  font-family: arial, sans-serif;
+  font-family: $font-family;
   border-collapse: collapse;
   width: 100%;
 }
@@ -424,7 +443,7 @@ th {
   border-bottom: 1px solid #222227;
   text-align: left;
   padding: 8px;
-  color: #fff;
+  color: $white-color;
   padding: 7px 15px;
 }
 
@@ -480,7 +499,7 @@ tr:nth-child(even) {
 
   width: 100%;
   padding: 0 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   color: #bdbdbd;
@@ -506,12 +525,12 @@ tr:nth-child(even) {
   border: 1px solid transparent;
   border-radius: 12px;
   position: relative;
-  color: #fff;
+  color: $white-color;
   font-size: 16px;
   width: 100%;
   padding: 15px 20px;
   resize: none;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   text-align: center !important;
 }
 
@@ -524,12 +543,12 @@ tr:nth-child(even) {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  color: #fff;
+  color: $white-color;
   font-size: 14px;
   position: relative;
   z-index: 2;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   font-weight: 500;
 }
 
@@ -538,7 +557,7 @@ tr:nth-child(even) {
 }
 
 .sign__input1:hover {
-  color: #fff;
+  color: $white-color;
 }
 
 .listGenre {
@@ -627,7 +646,7 @@ tr:nth-child(even) {
 }
 
 .marketPlace_label {
-  color: #fff;
+  color: $white-color;
   margin-top: 15px;
 }
 
@@ -636,11 +655,11 @@ tr:nth-child(even) {
   border: 1px solid transparent;
   border-radius: 12px;
   position: relative;
-  color: #fff;
+  color: $white-color;
   font-size: 16px;
   width: 100%;
   resize: none;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   margin-bottom: 15px;
   padding: 0px 20px;
 }
@@ -671,7 +690,7 @@ tr:nth-child(even) {
   transition: 0.4s;
   background-color: #df97c5;
   border-radius: 34px;
-  color: #fff;
+  color: $white-color;
 }
 
 .slider:before {
@@ -716,7 +735,7 @@ input:checked+.slider:before {
 
 .loader_popup-box {
   width: 30%;
-  background-color: #fff;
+  background-color: $white-color;
   min-height: 35%;
   border-radius: 10px;
   padding: 10px;
@@ -876,7 +895,7 @@ input:checked+.slider:before {
   font-size: 22px;
   background: #008000;
   border-radius: 50%;
-  color: #fff;
+  color: $white-color;
   padding: 6px;
   position: absolute;
   top: 5px;
@@ -904,7 +923,7 @@ input:checked+.slider:before {
   background: #403f83;
   width: auto;
   border: none;
-  color: #fff;
+  color: $white-color;
   border-radius: 5px;
   max-width: 100px;
   padding: 10px 20px;
@@ -919,7 +938,7 @@ input:checked+.slider:before {
 }
 
 .button_section .mybtn:hover {
-  color: #fff;
+  color: $white-color;
 }
 
 .upload-profile {
@@ -1020,11 +1039,11 @@ a {
   border: 0;
   box-shadow: unset !important;
   padding: 10px 20px;
-  color: #fff;
+  color: $white-color;
 }
 
 .navbar {
-  background: linear-gradient(180deg, #394956 0%, #394956 19.27%, #0d171e 100%);
+  background: linear-gradient(180deg, $box-primary-color 0%, $box-primary-color 19.27%, #0d171e 100%);
   border-top: 15px solid #0d171e;
 }
 
@@ -1036,19 +1055,19 @@ a {
   border-radius: 50px;
   display: inline-block;
   padding: 10px 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 0px 4px rgb(0 0 0 / 40%);
   border: 0px;
 }
 
 .main_btn:hover {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .nav-container {
@@ -1062,13 +1081,13 @@ a {
   border: 1px solid $primary-color;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 0px 4px rgb(0 0 0 / 40%);
   display: inline-block;
   transition: 0.5s ease;
@@ -1076,7 +1095,7 @@ a {
 
 .border_btn:hover {
   background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .search_btn {
@@ -1099,17 +1118,17 @@ a {
 }
 
 .navbar-nav .nav-link {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 0px 4px rgb(0 0 0 / 40%);
 }
 
 .lead {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1148,12 +1167,12 @@ header#myHeader {
 }
 
 .sub_menu li .sub-items {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white-color;
   display: inline-block;
   padding: 10px 30px;
   width: 100%;
@@ -1163,14 +1182,14 @@ header#myHeader {
 .sub_menu li .sub-items.active {
   background: $primary-color;
   border-radius: 50px;
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .sub_menu li .sub-items:hover svg,
 .sub_menu li .sub-items.active svg,
 .sub_menu li .sub-items:hover svg path,
 .sub_menu li .sub-items.active svg path {
-  fill: #fff;
+  fill: $white-color;
 }
 
 .sub_menu li .sub-items svg {
@@ -1214,7 +1233,7 @@ header#myHeader {
   line-height: 35px;
   text-align: center;
   border-radius: 5px;
-  color: #fff;
+  color: $white-color;
   font-size: 15px;
 }
 
@@ -1226,7 +1245,7 @@ header#myHeader {
 
 /* Wallet Section */
 .wallet_box {
-  background: linear-gradient(180deg, #394956 0%, #313f4a 100%);
+  background: linear-gradient(180deg, $box-primary-color 0%, $box-secondary-color 100%);
   border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 40px;
@@ -1247,30 +1266,30 @@ header#myHeader {
 }
 
 .wallet_box:hover .svg_icon svg path {
-  fill: #fff;
+  fill: $white-color;
 }
 
 .wallet_box:hover .svg_icon {
-  border: 1px solid #fff;
+  border: 1px solid $white-color;
 }
 
 .wallet_box h4,
 .mint_text h4,
 .category_sec h5 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .textdes {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #fff;
+  color: $white-color;
 }
 
 .svg_icon {
@@ -1294,7 +1313,7 @@ header#myHeader {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 3px solid #394956;
+  border: 3px solid $box-primary-color;
   border-radius: 10px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -1315,7 +1334,7 @@ header#myHeader {
 .mint_text li {
   list-style: none;
   display: inline-block;
-  color: #fff;
+  color: $white-color;
   padding-right: 10px;
 }
 
@@ -1397,7 +1416,7 @@ header#myHeader {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 3px solid #394956;
+  border: 3px solid $box-primary-color;
   border-radius: 10px;
   background-color: #222e38;
   /* height: 100%; */
@@ -1429,13 +1448,12 @@ header#myHeader {
 }
 
 .profile_img {
-  border: 2px solid #394956;
+  border: 2px solid $box-primary-color;
   border-radius: 100%;
   height: 90px;
   width: 90px;
   object-fit: cover;
   margin: auto;
-  /* background-image: url(../../assets/images/woman.png); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1475,13 +1493,13 @@ header#myHeader {
 } */
 .collname,
 .collname a {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   margin-top: -30px;
   margin-bottom: 5px;
 }
@@ -1491,7 +1509,7 @@ header#myHeader {
 }
 
 .collection_text p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1518,14 +1536,14 @@ button.slick-arrow {
 }
 
 button.slick-arrow.slick-prev {
-  background-image: url(./../../assets/images/collections/left_arrow.png);
+  background-image: url($images_path+"assets/images/collections/left_arrow.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
 }
 
 button.slick-arrow.slick-next {
-  background-image: url(./../../assets/images/collections/right_arrow.png);
+  background-image: url($images_path+"assets/images/collections/right_arrow.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1544,7 +1562,7 @@ button.slick-arrow.slick-next {
   border: 2px solid $primary-color !important;
   padding: 10px 75px;
   border-radius: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -1560,15 +1578,15 @@ button.slick-arrow.slick-next {
 
 .view_all_bdr:hover {
   background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
-  color: #fff !important;
+  color: $white-color !important;
   border: 2px solid $primary-color !important;
 }
 
 /* About Section*/
 .about_learnmore {
   background: linear-gradient(0deg, #0d171e, #0d171e);
-  border-top: 4px solid #313f4a;
-  border-bottom: 4px solid #313f4a;
+  border-top: 4px solid $box-secondary-color;
+  border-bottom: 4px solid $box-secondary-color;
 }
 
 .about_col {
@@ -1579,27 +1597,27 @@ button.slick-arrow.slick-next {
 }
 
 .about_col h3 {
-  font-family: "Roboto";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 38px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .about_col p {
-  font-family: "Roboto";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 23px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 /* Top Sallers */
 .author_list_box {
   background: #0d171e;
-  border: 1px solid #394956;
+  border: 1px solid $box-primary-color;
   box-sizing: border-box;
   box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
   border-radius: 60px;
@@ -1625,12 +1643,12 @@ button.slick-arrow.slick-next {
 .author_list_box:before {
   counter-increment: section;
   content: " " counter(section) ". ";
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
-  color: #ffffff;
+  color: $white-color;
   margin: 0px 10px;
 }
 
@@ -1643,16 +1661,16 @@ button.slick-arrow.slick-next {
 }
 
 .auther_info h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: inherit;
-  color: #fff;
+  color: $white-color;
 }
 
 .auther_info p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1679,7 +1697,7 @@ background: linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28
 background: -moz-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28%, 1) 100%);
 
 background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28%, 1) 100%);
-  border: 1px solid #313f4a;
+  border: 1px solid $box-secondary-color;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 25%);
   border-radius: 10px;
   padding: 20px 15px;
@@ -1705,17 +1723,17 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .items_info h3 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 5px;
 }
 
 .items_info p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1728,7 +1746,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .items_info .items_right span {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1745,13 +1763,13 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   border: 1px solid $primary-color;
   border-radius: 85px;
   padding: 5px 10px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .items_profileimg {
@@ -1784,22 +1802,22 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .text-widget p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .menu-widget h5,
 .newsletter-widget h5 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .menu-widget ul {
@@ -1810,12 +1828,12 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .menu-widget ul li a {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   transition: .5s ease;
 }
 
@@ -1829,12 +1847,12 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .newsletter-widget p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .newsletter_box {
@@ -1842,7 +1860,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 input#txt_subscribe {
-  background: #313f4a;
+  background: $box-secondary-color;
   border: 1px solid #4f4f4f;
   box-sizing: border-box;
   border-radius: 5px;
@@ -1863,16 +1881,16 @@ button#btn-subscribe {
 
 button#btn-subscribe i.arrow_right {
   font-size: 35px;
-  color: #fff;
+  color: $white-color;
 }
 
 .botton-text {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .social-icons li {
@@ -1896,21 +1914,21 @@ button#btn-subscribe i.arrow_right {
 }
 
 .copy {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .social-icons li i {
-  color: #fff;
+  color: $white-color;
 }
 
 /** Login **/
 .login_sec h1 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -1927,16 +1945,16 @@ button#btn-subscribe i.arrow_right {
 }
 
 .box-login h3 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .box-login p {
-  font-family: "Roboto";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1954,7 +1972,7 @@ button#btn-subscribe i.arrow_right {
   box-sizing: border-box;
   border-radius: 5px;
   min-height: 45px;
-  color: #fff;
+  color: $white-color;
 }
 
 .login_sec {
@@ -1969,26 +1987,26 @@ button#btn-subscribe i.arrow_right {
 
 /* REgister */
 .register_form h1 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
   line-height: 88px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 4px 4px 5px rgb(0 0 0 / 70%);
 }
 
 .register_form h4,
 .contact_form h4 {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 30px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .register_form P {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1997,12 +2015,12 @@ button#btn-subscribe i.arrow_right {
 }
 
 label {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 10px;
   width: 100%;
   text-align: left;
@@ -2016,7 +2034,7 @@ label {
   border: 1px solid $primary-color;
   border-radius: 5px;
   height: 45px;
-  color: #fff;
+  color: $white-color;
 }
 
 .contact_form textarea,
@@ -2024,13 +2042,13 @@ label {
   background: #0d171e;
   border: 1px solid $primary-color;
   border-radius: 5px;
-  color: #fff;
-  color: #fff;
+  color: $white-color;
+  color: $white-color;
 }
 
 .form-control:focus {
-  color: #fff;
-  /* background-color: #fff; */
+  color: $white-color;
+  /* background-color: $white-color; */
   border-color: $primary-color;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(255 141 2);
@@ -2040,20 +2058,37 @@ label {
 }
 
 .register_hd h1 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
   line-height: 88px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 4px 4px 5px rgb(0 0 0 / 70%);
+}
+
+.register_bg{
+ background-image: url($images_path+"assets/images/marketplace-bg.jpg");
+    background-repeat: "no-repeat";
+    background-size: "cover";
+    background-position-x: "center";
+    background-position-y: "center";
+}
+
+.bgImgStyle{
+  background-image: url($images_path+"assets/images/background.jpg");
+    background-repeat: "no-repeat";
+    background-size: "cover";
+    background-position-x: "center";
+    background-position-y: "center";
+    background-color: "#000";
 }
 
 /* marketPlace Page*/
 .marketplace_box {
-  background: linear-gradient(180deg, #313f4a 46.35%, #0d171e 100%);
-  border: 3px solid #313f4a;
+  background: linear-gradient(180deg, $box-secondary-color 46.35%, #0d171e 100%);
+  border: 3px solid $box-secondary-color;
   box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
   border-radius: 10px;
 }
@@ -2079,12 +2114,12 @@ label {
 }
 
 .tab_btn li button {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   background: transparent;
   border: 0;
   padding: 10px;
@@ -2118,7 +2153,7 @@ label {
   border-radius: 5px 0px 0px 5px;
   padding: 0px 15px;
   font-size: 15px;
-  color: #fff;
+  color: $white-color;
   margin-right: 0px !important;
 }
 
@@ -2138,12 +2173,12 @@ label {
   border: 1px solid #d3d3d3;
   background-color: #27353f;
   height: 45px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #fff;
+  color: $white-color;
   /* background-image: url(../img/ep_arrow-right-bold.png); */
   background-size: 17px;
   /* background-position: 97%; */
@@ -2169,11 +2204,11 @@ label {
 }
 
 .market_grid.active {
-  border: 1px solid #fff;
+  border: 1px solid $white-color;
 }
 
 .market_grid.active svg {
-  fill: #fff;
+  fill: $white-color;
 }
 
 /* .market_grid img {
@@ -2182,13 +2217,13 @@ label {
 
 button.filter_btn {
   background: transparent;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   border: 1px solid $primary-color;
-  color: #fff;
+  color: $white-color;
   height: 45px;
   border-radius: 40px;
   width: 10%;
@@ -2229,7 +2264,7 @@ button.filter_btn.active {
 .progress {
   border-radius: 33px;
   background-color: #0d171e;
-  border: 1px solid #394956;
+  border: 1px solid $box-primary-color;
 }
 
 .progress-bar {
@@ -2237,7 +2272,7 @@ button.filter_btn.active {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  color: #fff;
+  color: $white-color;
   text-align: center;
   white-space: nowrap;
   transition: width 0.6s ease;
@@ -2246,7 +2281,7 @@ button.filter_btn.active {
 }
 
 .tab_label p {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2256,7 +2291,7 @@ button.filter_btn.active {
 }
 
 .tab_label p span {
-  color: #ffffff;
+  color: $white-color;
   display: block;
 }
 
@@ -2272,24 +2307,24 @@ button.filter_btn.active {
 
 .big_text {
   font-size: 20px;
-  color: #fff;
+  color: $white-color;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-  color: #fff;
+  color: $white-color;
   background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
   border-radius: 60px;
   padding: 10px 40px;
 }
 
 .nav-pills .nav-link {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
-  color: #fff;
+  color: $white-color;
 }
 
 .nav-pills .nav-item {
@@ -2297,7 +2332,7 @@ button.filter_btn.active {
 }
 
 .nft_details p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -2306,12 +2341,12 @@ button.filter_btn.active {
 }
 
 .nft_details h1 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
-  color: #fff;
+  color: $white-color;
   margin-top: 0px;
 }
 
@@ -2321,12 +2356,12 @@ button.filter_btn.active {
 }
 
 .owner_by p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 0px;
 }
 
@@ -2335,7 +2370,7 @@ button.filter_btn.active {
 }
 
 .add_wishlist {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -2344,23 +2379,23 @@ button.filter_btn.active {
 }
 
 .price_box h4 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
 
 .price_div {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 20px;
 }
 
@@ -2369,7 +2404,7 @@ button.filter_btn.active {
 }
 
 .price_div span {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2389,24 +2424,24 @@ button.filter_btn.active {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
 }
 
 .nft_detailnumber li {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   display: inline-block;
 }
 
 .asset_title {
-  color: #fff;
+  color: $white-color;
 }
 
 .asset_detail {
@@ -2418,12 +2453,12 @@ button.filter_btn.active {
 }
 
 .nft_detailnumber li {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   display: inline-block;
   margin-right: 20px;
 }
@@ -2454,7 +2489,7 @@ background: linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28
 background: -moz-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28%, 1) 100%);
 
 background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28%, 1) 100%);
-  border: 1px solid #313f4a;
+  border: 1px solid $box-secondary-color;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 15px;
@@ -2465,7 +2500,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .items_info span {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -2475,7 +2510,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .nft_info span {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -2487,12 +2522,12 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .nft_info h3 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   margin-top: 0px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -2501,12 +2536,12 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .nft_info p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -2554,23 +2589,23 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 .nft_list th,
 .nft_list h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  color: #fff;
+  color: $white-color;
   border-bottom: 0px;
   margin-bottom: 20px;
 }
 
 .nft_list td,
 .nft_list li {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   vertical-align: middle;
   display: flex;
   flex-wrap: wrap;
@@ -2663,7 +2698,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   background-color: white;
   margin: auto;
   margin-top: -100px;
-  background-image: url(../../../src/assets/images/avatar5.jpg);
+  background-image: url($images_path+"ssets/images/avatar5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2751,11 +2786,11 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   display: inline-block;
   padding: 10px 20px;
   border-radius: 40px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .coppycode .ctc {
@@ -2785,7 +2820,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 .coppycode span textarea {
   background: none !important;
-  color: #fff !important;
+  color: $white-color !important;
   border: none !important;
   resize: none !important;
 }
@@ -2796,10 +2831,10 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_title {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 48px;
-  color: #ffffff;
+  color: $white-color;
   /* margin-top: -80px; */
 }
 
@@ -2822,24 +2857,24 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_status li h4 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 48px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .collection_status li p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 24px;
   color: #939393;
 }
 
 .collection_description p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .collection_description {
@@ -2852,10 +2887,10 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   background: $primary-color;
   padding: 12px 35px;
   border: 0;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 18px;
-  color: #ffffff !important;
+  color: $white-color !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2873,7 +2908,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 40px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 18px;
   color: $primary-color;
@@ -2888,11 +2923,11 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 .item_active .active svg,
 .item_active .active path,
 .item_active .active g {
-  fill: #fff !important;
+  fill: $white-color !important;
 }
 
 .item_active .active:hover {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .collection_items {
@@ -2903,7 +2938,7 @@ background: linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28
 background: -moz-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28%, 1) 100%);
 
 background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207, 20%, 28%, 1) 100%);;
-  border: 1px solid #313f4a;
+  border: 1px solid $box-secondary-color;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 25%);
   border-radius: 10px;
   transition: .5s ease;
@@ -2918,7 +2953,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 .collection_items:hover .buy_btn {
   background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .form-select:focus {
@@ -2937,7 +2972,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
   border-radius: 60px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 500;
   font-size: 12px;
   text-align: center;
@@ -2949,7 +2984,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 .buy_btn:hover {
   background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .collection_row {
@@ -2959,7 +2994,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .coll_itemstext span {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 12px;
   color: #9e9e9e;
@@ -2973,22 +3008,22 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .coll_itemstext h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .coll_itemstext span.col_proiduct_price {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: right;
-  color: #ffffff;
+  color: $white-color;
   height: 100%;
 }
 
@@ -2997,7 +3032,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 span.lastone {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -3016,7 +3051,7 @@ span.lastone {
 }
 
 .edit_btn i {
-  color: #fff;
+  color: $white-color;
   font-size: 24px;
 }
 
@@ -3029,7 +3064,7 @@ button.img_edit_btn {
 }
 
 .img_edit_btn i {
-  color: #fff;
+  color: $white-color;
 }
 
 .overlat_btn {
@@ -3056,26 +3091,26 @@ button.img_edit_btn {
 }
 
 .user_description p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   max-width: 950px;
   margin: auto;
   margin-bottom: 20px;
 }
 
 .user_description h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .author_cart {
@@ -3087,10 +3122,10 @@ button.img_edit_btn {
 }
 
 .author_cart li {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
-  color: #ffffff;
+  color: $white-color;
   display: inline-block;
   padding: 0px 20px;
   background: transparent;
@@ -3098,10 +3133,10 @@ button.img_edit_btn {
 }
 
 .author_cart li button {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
-  color: #ffffff;
+  color: $white-color;
   display: inline-block;
   padding: 15px 20px;
   background: transparent;
@@ -3152,12 +3187,12 @@ button.img_edit_btn {
   border: 1px solid #d3d3d3;
   background-color: #27353f;
   height: 45px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #fff;
+  color: $white-color;
   /* background-image: url(../img/ep_arrow-right-bold.png); */
   background-size: 17px;
   background-position: 95%;
@@ -3167,18 +3202,18 @@ button.img_edit_btn {
 
 .Action_table th {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .Action_table td {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 500;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
   text-align: center;
 }
 
@@ -3187,12 +3222,12 @@ button.img_edit_btn {
 }
 
 tr:nth-child(even) {
-  color: #fff;
+  color: $white-color;
   background-color: transparent;
 }
 
 span.special_text {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -3214,12 +3249,12 @@ span.special_text {
 
 .usersidebar li,
 .usersidebar li a {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white-color;
   list-style: none;
 }
 
@@ -3273,35 +3308,35 @@ span.special_text {
 }
 
 .profile_images li h4 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .profile_h1 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 36px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 5px;
 }
 
 .profile_input {
   background: #0d171e;
-  border: 1px solid #394956;
+  border: 1px solid $box-primary-color;
   border-radius: 5px;
   height: 45px;
-  color: #fff;
+  color: $white-color;
 }
 
 .profile_textarea {
   background: #0d171e;
-  border: 1px solid #394956;
+  border: 1px solid $box-primary-color;
   border-radius: 5px;
-  color: #fff;
+  color: $white-color;
 }
 
 .profile_textarea::placeholder,
@@ -3315,7 +3350,7 @@ span.special_text {
 .contact_form input::placeholder,
 .contact_form input::-moz-placeholder,
 .contact_form input::-webkit-input-placeholder {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .copy_input {
@@ -3333,7 +3368,7 @@ span.special_text {
 
 .add_links_input {
   background: #0d171e;
-  border: 1px solid #394956;
+  border: 1px solid $box-primary-color;
   border-radius: 5px;
 }
 
@@ -3346,13 +3381,13 @@ span.special_text {
 }
 
 .small_info {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  color: #ffffff;
+  color: $white-color;
   margin-top: 10px;
   display: block;
 }
@@ -3372,19 +3407,19 @@ span.special_text {
 
 .notification_list h6,
 .notification_bottom h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 20px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .notification_list p,
 .profile_p,
 .notification_bottom p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .notification_list {
@@ -3407,24 +3442,24 @@ button.yellow_btn.yellow_dark {
 
 .notification_table {
   background: #0d171e;
-  border: 1px solid #394956;
+  border: 1px solid $box-primary-color;
   border-radius: 5px;
   width: 50%;
 }
 
 .notification_table h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 0px;
 }
 
 .notification_table p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 13px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .notification_table td:last-child {
@@ -3433,11 +3468,11 @@ button.yellow_btn.yellow_dark {
 
 .notification_table td:last-child {
   width: 70%;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 500;
   font-size: 18px;
-  color: #ffffff;
-  border-left: 1px solid #394956;
+  color: $white-color;
+  border-left: 1px solid $box-primary-color;
 }
 
 /* Blog */
@@ -3449,7 +3484,7 @@ button.yellow_btn.yellow_dark {
 }
 
 .blog_txt small {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -3457,21 +3492,21 @@ button.yellow_btn.yellow_dark {
 }
 
 .blog_txt h4 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
-  color: #ffffff;
+  color: $white-color;
   margin: 0;
   margin-bottom: 5px;
 }
 
 .blog_txt p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .blog_img {
@@ -3481,10 +3516,10 @@ button.yellow_btn.yellow_dark {
 .square_btn {
   background: #bd712e;
   border-radius: 5px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 13px;
-  color: #ffffff;
+  color: $white-color;
   padding: 7px 20px;
   position: absolute;
   top: 10px;
@@ -3507,11 +3542,11 @@ button.yellow_btn.yellow_dark {
 }
 
 .pagination .page-link {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  color: #ffffff !important;
+  color: $white-color !important;
   padding: 15px 25px;
 }
 
@@ -3527,13 +3562,13 @@ button.yellow_btn.yellow_dark {
 }
 
 .blogtagged h1 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 72px;
   line-height: 88px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 4px 4px 5px rgb(0 0 0 / 70%);
 }
 
@@ -3558,10 +3593,10 @@ button.yellow_btn.yellow_dark {
 .contact_details ul li a,
 .contact_details ul li a:hover,
 .contact_details ul li a:focus {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
   list-style: none;
 }
 
@@ -3584,19 +3619,19 @@ button.yellow_btn.yellow_dark {
 }
 
 .contact_details h4 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 30px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .single-blog-detail p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .single-blog-detail ul {
@@ -3604,12 +3639,12 @@ button.yellow_btn.yellow_dark {
 }
 
 .single-blog-detail ul li {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white-color;
   list-style: none;
   display: inline-block;
   margin-right: 20px;
@@ -3621,39 +3656,39 @@ button.yellow_btn.yellow_dark {
 
 .blog_comment h5,
 .form_comment h5 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 25px;
 }
 
 .blog_comment h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .blog_comment p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .date_task,
 .date_task .link_btn {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 10px;
 }
 
@@ -3679,7 +3714,7 @@ button.yellow_btn.yellow_dark {
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 5px;
-  color: #fff;
+  color: $white-color;
 }
 
 .form_comment input {
@@ -3687,10 +3722,10 @@ button.yellow_btn.yellow_dark {
 }
 
 .blog_tlt {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .bottom_border {
@@ -3708,18 +3743,18 @@ button.yellow_btn.yellow_dark {
   border-radius: 50px;
   padding: 10px 20px;
   display: inline-block;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 18px;
   text-align: center;
-  color: #ffffff !important;
+  color: $white-color !important;
 }
 
 .blog_about p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .blog_tag ul {
@@ -3734,10 +3769,10 @@ button.yellow_btn.yellow_dark {
 }
 
 .recent_li {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 form.help_form {
@@ -3747,7 +3782,7 @@ form.help_form {
   position: relative;
   display: flex;
   align-items: center;
-  height: 55px;
+  height: $title;
   width: 100%;
 }
 
@@ -3756,7 +3791,7 @@ form.help_form input {
 }
 
 form.help_form input:focus {
-  color: #fff;
+  color: $white-color;
 }
 
 form.help_form input,
@@ -3766,7 +3801,7 @@ form.help_form input:focus {
   height: 100%;
   border: 0 !important;
   padding: 10px 20px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 20px;
   outline: none;
@@ -3778,7 +3813,7 @@ button#btn-submit {
   border: 1px solid $primary-color;
   border-radius: 0px 50px 50px 0px;
   font-size: 50px;
-  color: #fff;
+  color: $white-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3803,17 +3838,17 @@ button#btn-submit {
 }
 
 .feature-box h4 {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-weight: 800;
   font-size: 25px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .feature-box p {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .hlp-btn {
@@ -3821,31 +3856,31 @@ button#btn-submit {
   border-radius: 49px;
   display: inline-block;
   padding: 10px 70px;
-  font-family: "Nunito";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  color: #fff;
+  color: $white-color;
 }
 
 .feature-box:hover .hlp-btn {
-  background: #fff;
+  background: $white-color;
   color: $primary-color;
 }
 
 .promoted_div h4 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 36px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .promoted_div p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .mint_tab {
@@ -3853,12 +3888,12 @@ button#btn-submit {
 }
 
 .mint_tab .nav-link {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 50px;
-  color: #ffffff;
+  color: $white-color;
   padding: 0px 20px;
 }
 
@@ -3879,7 +3914,7 @@ button#btn-submit {
 .cart_qt {
   width: 45px;
   height: 45px;
-  background: #ffffff;
+  background: $white-color;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -3892,7 +3927,7 @@ button#btn-submit {
   position: absolute;
   bottom: -5px;
   right: -15px;
-  color: #fff;
+  color: $white-color;
   font-size: 12px;
   width: 25px;
   height: 25px;
@@ -3906,11 +3941,11 @@ button#btn-submit {
   border-radius: 5px;
   display: inline-block;
   padding: 10px 20px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 18px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 0px 4px rgb(0 0 0 / 40%);
   border: 0px;
 }
@@ -3924,7 +3959,7 @@ button#btn-submit {
 }
 
 .Connected {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -3943,15 +3978,15 @@ button#btn-submit {
 }
 
 .sub_div h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 16px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 0px;
 }
 
 .sub_div p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
   color: #5a7489;
@@ -3975,12 +4010,12 @@ button#btn-submit {
   border: 2px solid #bd712e;
   border-radius: 10px;
   display: inline-block;
-  font-family: "Roboto";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 2px 4px rgb(0 0 0 / 40%);
   padding: 8px 30px;
 }
@@ -3988,38 +4023,38 @@ button#btn-submit {
 .start_btn span {
   background: #ff364a;
   border-radius: 5px;
-  font-family: "Roboto";
+  font-family: $font-family;
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   padding: 5px 40px;
   display: inline-block;
   margin-left: 20px;
 }
 
 .mintevent h4 {
-  font-family: "Roboto";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 48px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .mintevent p {
-  font-family: "Roboto";
+  font-family: $font-family;
   font-weight: 500;
   font-size: 24px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .connect_wallet_btn {
   background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   border-radius: 10px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 20px;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 0px 4px rgb(0 0 0 / 40%);
   display: inline-block;
   padding: 10px 20px;
@@ -4027,18 +4062,18 @@ button#btn-submit {
 }
 
 .connect_wallet_btn:hover {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .mintprice {
   border: 1px solid $primary-color;
   border-radius: 10px;
-  font-family: "Roboto";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #ffffff;
+  color: $white-color;
   padding: 10px;
 }
 
@@ -4047,29 +4082,29 @@ button#btn-submit {
 }
 
 .amount h5 {
-  font-family: "Roboto";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 36px;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 0px;
 }
 
 .amount p {
-  font-family: "Roboto";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .qt_selector button {
   background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   border-radius: 5px;
-  font-family: "Roboto";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   /* padding: 5px 20px; */
   width: 50px;
   height: 50px;
@@ -4083,13 +4118,13 @@ button#btn-submit {
   background: #0d171e;
   border: 1px solid $primary-color;
   border-radius: 5px;
-  font-family: "Roboto";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   width: 70px;
   height: 50px;
   margin: 0px 10px;
@@ -4097,14 +4132,14 @@ button#btn-submit {
 
 .mint_btn button {
   background: linear-gradient(180deg, $primary-color 26.56%, $secondary-color 100%);
-  border: 1px solid #394956;
+  border: 1px solid $box-primary-color;
   border-radius: 10px;
   padding: 10px;
-  font-family: "Roboto";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 24px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   width: 100%;
   max-width: 220px;
 }
@@ -4135,52 +4170,52 @@ button#btn-submit {
   bottom:20px;
 } */
 .partner_title {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 700;
   font-size: 48px;
 }
 
 .text-24 {
   font-size: 24px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   line-height: initial;
 }
 
 .partner_items h6 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .partner_items p {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .collection_text .description {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
 }
 
 .partner_faq .accordion-button1 {
   position: relative;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
-  color: #ffffff;
+  color: $white-color;
   background: transparent;
   border: 0;
   width: 100%;
@@ -4188,11 +4223,11 @@ button#btn-submit {
 }
 
 .partner_faq .accordion-body {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: $white-color;
   padding: 20px 10px;
 }
 
@@ -4215,12 +4250,12 @@ button#btn-submit {
 }
 
 .help_qt li a {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   display: flex;
 }
 
@@ -4235,11 +4270,11 @@ button#btn-submit {
 }
 
 .breadcrumb_div li {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   display: inline-block;
   margin-right: 20px;
   list-style: circle;
@@ -4285,12 +4320,12 @@ button#btn-submit {
 }
 
 .second_hd {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
-  color: #fff;
+  color: $white-color;
 }
 
 .title_bottom_border {
@@ -4302,12 +4337,12 @@ button#btn-submit {
 
 .mint_time {
   border: 1px solid $primary-color;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white-color;
   display: inline-flex;
   align-items: center;
   padding: 5px 15px;
@@ -4361,14 +4396,14 @@ button#btn-submit {
   background: #0d171e;
   border: 2px solid $primary-color;
   border-radius: 10px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: inherit;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: $white-color;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -4409,12 +4444,12 @@ iframe {
   background: $primary-color;
   border: 1px solid $primary-color;
   border-radius: 50px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 button.border_btn {
@@ -4432,20 +4467,20 @@ button.border_btn {
 }
 
 .title_36 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .white_btn {
   width: 180px;
   height: 45px;
-  background: #ffffff;
-  border: 1px solid #ffffff;
+  background: $white-color;
+  border: 1px solid $white-color;
   border-radius: 50px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -4458,22 +4493,22 @@ button.border_btn {
 }
 
 .h1 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 72px;
   line-height: 88px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 4px 4px 5px rgb(0 0 0 / 70%);
 }
 
 .font_24 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -4538,11 +4573,11 @@ a:hover {
 }
 
 .hepl-detail-left li a {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  color: #fff;
+  color: $white-color;
   border: 1px solid $primary-color;
   border-radius: 5px;
   display: block;
@@ -4555,7 +4590,7 @@ a:hover {
 }
 
 .text-36 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 600;
   font-size: 36px;
 }
@@ -4591,7 +4626,7 @@ a:hover {
   color: $primary-color;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
   height: 100%;
   width: 100%;
 }
@@ -4602,7 +4637,7 @@ a:hover {
 }
 
 .last_slide:hover .view_slide {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .small_yellow_btn {
@@ -4617,12 +4652,12 @@ a:hover {
 }
 
 .small_btn {
-  font-family: "Nunito";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
-  color: #ffffff;
+  color: $white-color;
   padding: 5px 20px;
   display: inline-block;
   width: max-content;
@@ -4637,14 +4672,14 @@ a:hover {
   font-size: 18px !important;
   text-align: center;
   padding: 10px 20px;
-  color: #fff;
+  color: $white-color;
 }
 
 .author_cart .dropdown-menu li .dropdown-item:hover,
 .author_cart .dropdown-menu li .dropdown-item.active {
   background: $primary-color;
   border-radius: 50px;
-  color: #fff !important;
+  color: $white-color !important;
   font-style: normal;
   font-weight: 600 !important;
   font-size: 18px !important;
@@ -4654,7 +4689,7 @@ a:hover {
 
 .author_cart .dropdown-menu li .dropdown-item.active svg,
 .author_cart .dropdown-menu li .dropdown-item:hover svg {
-  fill: #fff;
+  fill: $white-color;
 }
 
 .author_cart .dropdown-menu li .dropdown-item svg {
@@ -4671,12 +4706,12 @@ a:hover {
 }
 
 .drop_down_tlt {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   display: block;
   position: relative;
   margin-bottom: 10px;
@@ -4811,7 +4846,7 @@ a:hover {
   }
 
   i.fa.fa-bars {
-    color: #fff;
+    color: $white-color;
   }
 
   .navbar-nav li.nav-item {
@@ -5098,10 +5133,10 @@ a:hover {
 }
 
 .search_qt {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .switch_container .confirm_btn {
@@ -5109,13 +5144,13 @@ a:hover {
   border-radius: 10px;
   font-weight: 600;
   background: #1d8aef;
-  color: #fff;
+  color: $white-color;
   transition: all 0.1s ease-in-out;
 }
 
 .switch_container .confirm_btn:hover {
   color: #1d8aef;
-  background: #fff;
+  background: $white-color;
 }
 
 .switch_container .cancel_btn {
@@ -5123,13 +5158,13 @@ a:hover {
   border-radius: 10px;
   font-weight: 600;
   background: #ff0000;
-  color: #fff;
+  color: $white-color;
   transition: all 0.1s ease-in-out;
 }
 
 .switch_container .cancel_btn:hover {
   color: #ff0000;
-  background: #fff;
+  background: $white-color;
 }
 
 .switch_container .network_btn {
@@ -5137,13 +5172,13 @@ a:hover {
   border-radius: 10px;
   font-weight: 600;
   background: #1d8aef;
-  color: #fff;
+  color: $white-color;
   transition: all 0.1s ease-in-out;
 }
 
 .switch_container .network_btn:hover {
   color: #1d8aef;
-  background: #fff;
+  background: $white-color;
 }
 
 .coverImg_cont {
@@ -5183,7 +5218,7 @@ a:hover {
 .searched_div {
   position: absolute;
   top: 75px;
-  color: #fff;
+  color: $white-color;
   background: #1c2932;
   min-width: 300px;
   padding: 10px 24px;
@@ -5222,7 +5257,7 @@ a:hover {
 }
 
 .searched_div ul a {
-  color: #fff;
+  color: $white-color;
   font-size: 16px;
 }
 
@@ -5238,7 +5273,7 @@ a:hover {
 
 .search_view_all:hover {
   background: linear-gradient(180deg, $primary-color 56.77%, $secondary-color 100%);
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .filter {
@@ -5265,12 +5300,12 @@ a:hover {
 }
 
 .drop_down_tlt {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: $white-color;
   display: block;
   position: relative;
   margin-bottom: 10px;
@@ -5306,7 +5341,7 @@ a:hover {
 
 .status_ul li:hover,
 .status_ul li.filter_border.active {
-  color: #fff;
+  color: $white-color;
   background-color: $primary-color;
 }
 
@@ -5315,12 +5350,12 @@ a:hover {
   border: 1px solid $primary-color;
   border-radius: 5px;
   display: inline-block;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   width: 48%;
   text-align: center;
   padding: 10px 10px;
@@ -5335,12 +5370,12 @@ a:hover {
   border: 1px solid $primary-color;
   border-radius: 5px;
   display: block;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
   width: 100%;
   text-align: center;
   padding: 10px 10px;
@@ -5359,8 +5394,8 @@ a:hover {
   border: 1px solid $primary-color;
   border-radius: 5px;
   width: 45%;
-  color: #fff;
-  font-family: "Montserrat";
+  color: $white-color;
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -5371,7 +5406,7 @@ a:hover {
   display: inline-block;
   width: 10%;
   font-size: 16px;
-  color: #fff;
+  color: $white-color;
   text-align: center;
   margin-top: 6px;
 }
@@ -5385,17 +5420,17 @@ a:hover {
 }
 
 .sub-items {
-  color: #fff;
+  color: $white-color;
   font-size: 16px;
 }
 
 .filtercol .sub-items {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .filtercol .sub-items svg {
@@ -5436,7 +5471,7 @@ a:hover {
   height: 18px;
   border: 1px solid #ddd;
   border-radius: 100%;
-  background: #fff;
+  background: $white-color;
   background: #0d171e;
   border: 1px solid #626262;
 }
@@ -5484,12 +5519,12 @@ a:hover {
   background: none;
   border: none;
   outline: none;
-  color: #fff;
+  color: $white-color;
 }
 
 .accept_btn:hover {
   color: yellow;
-  background: #fff;
+  background: $white-color;
 }
 
 .category_img {
@@ -5513,7 +5548,7 @@ a:hover {
 .modal-content {
   /* background: #0d171e; */
   border: 1px solid $primary-color;
-  background-image: url("./../../assets/images/background.jpg");
+  background-image: url($images_path+"assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -5524,12 +5559,12 @@ a:hover {
 }
 
 .title_20 {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: inherit;
-  color: #fff;
+  color: $white-color;
 }
 
 .marketplace .modal-header {
@@ -5546,7 +5581,7 @@ a:hover {
   border-radius: 5px;
   padding: 0px 15px;
   font-size: 15px;
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .tab-content {
@@ -5576,14 +5611,14 @@ a:hover {
 }
 
 .marketplace .navbtn.active {
-  color: #fff;
+  color: $white-color;
   background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
 }
 
 .marketplace .navbtn i.fa {
   font-size: 30px;
   margin-bottom: 15px;
-  color: #fff;
+  color: $white-color;
 }
 
 .modal.marketplace {
@@ -5628,19 +5663,19 @@ a:hover {
   border: 1px solid $primary-color;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   text-shadow: 0px 0px 4px rgb(0 0 0 / 40%);
   display: inline-block;
   transition: 0.5s ease;
   margin-right: 12px;
   background-color: $primary-color !important;
-  color: #fff;
+  color: $white-color;
   transition: all 0.1s ease;
 }
 
@@ -5671,7 +5706,7 @@ a:hover {
 */
 
 .fixed_header thead {
-  color: #fff;
+  color: $white-color;
 }
 
 .fixed_header th,
@@ -5742,7 +5777,7 @@ a:hover {
   font-size: 17px;
   font-weight: 800;
   margin-right: 10px;
-  color: #fff;
+  color: $white-color;
 }
 
 .bid_user_address .pgn {
@@ -5793,7 +5828,7 @@ a:hover {
 .btn-main {
   display: block;
   text-align: center;
-  color: #fff !important;
+  color: $white-color !important;
   background: linear-gradient(180deg, $primary-color 54.17%, $secondary-color 100%);
   border-radius: 30px;
   border: 2px solid $primary-color !important;
@@ -5825,12 +5860,12 @@ a:hover {
 
 .navbar_form input,
 .navbar_form input:focus {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 #item_price:focus,
 #item_bid:focus {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .nft .slick-list .slick-slide {
@@ -6046,7 +6081,7 @@ section.svelte-1mh1h9 {
   font-size: 18px !important;
   text-align: left;
   padding: 10px 20px;
-  color: #fff;
+  color: $white-color;
 }
 
 .author_cart li .Autherpagetab li {
@@ -6059,7 +6094,7 @@ section.svelte-1mh1h9 {
   border-bottom: 0px solid $primary-color;
   background: $primary-color;
   border-radius: 50px;
-  color: #fff !important;
+  color: $white-color !important;
   font-style: normal;
   font-weight: 600 !important;
   font-size: 18px !important;
@@ -6069,7 +6104,7 @@ section.svelte-1mh1h9 {
 
 .author_cart li .Autherpagetab button:hover svg,
 .author_cart li .Autherpagetab button.active svg {
-  fill: #fff;
+  fill: $white-color;
 }
 
 .displaynone {
@@ -6077,12 +6112,12 @@ section.svelte-1mh1h9 {
 }
 
 .usersidebar .nav-link {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white-color;
   list-style: none;
   background: transparent !important;
   width: fit-content;
@@ -6173,7 +6208,7 @@ model-viewer {
 }
 
 .notification-container {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
 }
 
 .modal.marketplace.putOnMarketplace.active {
@@ -6229,7 +6264,7 @@ model-viewer {
 }
 
 .box button.btn-main {
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .box button.btn-main:hover {
@@ -6254,7 +6289,7 @@ model-viewer {
 }
 
 .modal__container {
-  background: #fff;
+  background: $white-color;
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
@@ -6266,7 +6301,7 @@ model-viewer {
 button.custom_close {
   border: 0px;
   background: $primary-color;
-  color: #fff;
+  color: $white-color;
   border-radius: 100%;
   line-height: inherit;
   width: 30px;
@@ -6278,7 +6313,7 @@ button.custom_close {
 }
 
 .modal__container {
-  background: #fff;
+  background: $white-color;
   border-radius: 5px;
   margin: 50px auto;
   padding: 30px;
@@ -6352,7 +6387,7 @@ button.custom_close {
 
 .collection_description ul li {
   font-size: 16px;
-  color: #fff;
+  color: $white-color;
   display: inline-block;
   list-style: disc;
   margin-right: 10px;
@@ -6364,7 +6399,7 @@ button.custom_close {
   width: 10px;
   height: 10px;
   margin-right: 10px;
-  background: #fff;
+  background: $white-color;
   border-radius: 100%;
   top: 0px;
   position: relative;
@@ -6402,10 +6437,10 @@ button.custom_close {
 }
 
 .popup-content1 .bid_user_details .mb-3 {
-  color: #fff;
+  color: $white-color;
   font-size: 24px;
   font-weight: 400;
-  font-family: "Montserrat";
+  font-family: $font-family;
 }
 
 .bid_user_details .bid_user_address,
@@ -6414,11 +6449,11 @@ button.custom_close {
 .bid_user_details .bid_user_address h2,
 .bid_user_details .bid_user_address p {
   font-size: 18px;
-  color: #fff;
+  color: $white-color;
 }
 
 .popup-content1 .bid_user_details .mb-3 {
-  color: #fff;
+  color: $white-color;
   font-size: 18px;
 }
 
@@ -6631,13 +6666,13 @@ button.custom_close {
 }
 
 #mc_embed_signup .mc-field-group input {
-  background: #313f4a;
+  background: $box-secondary-color;
   border: 1px solid #4f4f4f !important;
   box-sizing: border-box;
   padding-left: 15px;
   border-radius: 5px;
   height: 45px !important;
-  color: #fff !important;
+  color: $white-color !important;
   width: 100%;
 }
 
@@ -6652,7 +6687,7 @@ button.custom_close {
   margin-right: 0px !important;
   border: 0px;
   padding: 0px 15px;
-  color: #fff;
+  color: $white-color;
 }
 
 #mc_embed_signup form {
@@ -6735,7 +6770,7 @@ height: 100%;
 
 .img_3d>a,
 .img_3d model-viewer {
-/* background:linear-gradient(180deg,#394956 0%,#25323c 76.04%,#0d171e 100%); */
+/* background:linear-gradient(180deg,$box-primary-color 0%,#25323c 76.04%,#0d171e 100%); */
 height:100%;
 box-shadow:2px 2px 5px rgb(0 0 0 / 25%);
 display: block;
@@ -6802,7 +6837,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   cursor: pointer;
 }
 .viewAssets .fa.fa-expand {
-  border: 1px solid #ffffff;
+  border: 1px solid $white-color;
   padding: 7px;
   border-radius: 50%;
   z-index: 9;
@@ -6810,7 +6845,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   -moz-box-shadow: 0px 0px 1px 1.5px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 2px 1.5px rgb(0 0 0 / 75%);
   color: #000000;
-  background: #ffffff;
+  background: $white-color;
 }
 .viewAssets .fa.fa-expand:hover {
   transform: scale(1.2); 
@@ -6838,10 +6873,10 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .collection_description span, .collection_description .readmoreContent {
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: $white-color;
   margin: 0 0 1em;
   line-height: 1.4285em;
 }
@@ -6865,7 +6900,7 @@ model-viewer {
 }
 
 .subsocial-icons a:hover{
-  color: #fff !important;
+  color: $white-color !important;
 }
 
 .notification{
@@ -6874,7 +6909,7 @@ model-viewer {
 }
 
 .MuiInputBase-root{
-  color: #fff !important;
+  color: $white-color !important;
   height: 45px !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -6904,10 +6939,10 @@ model-viewer {
   color:$primary-color !important;
 }
 .MuiTabs-scroller.MuiTabs-fixed .MuiTabs-indicator {
-  background-color: #ffffff !important;
+  background-color: $white-color !important;
 }
 button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
-  color: #ffffff !important;
+  color: $white-color !important;
   background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
 }
 
@@ -6939,7 +6974,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
 }
 
 /* .detailed-desc{
-  color:#fff;
+  color:$white-color;
   font-size: medium;
 } */
 
@@ -6960,14 +6995,14 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
   font-weight: 800;
   font-size: 25px;
   line-height: 34px;
-  color: #fff;
+  color: $white-color;
   }
 
   .main-title {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
-      font-size: 55px;
+      font-size: $title;
       line-height: 112.4%;
   }
   .btn-banner {
@@ -6980,9 +7015,9 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
       font-size: 24px;
       line-height: 29px;
       text-align: center;
-      color: #fff;
+      color: $white-color;
       padding: 10px 50px;
       transition: .5s ease-in-out;
   }
-  .btn-banner:hover {background: #fff;}
+  .btn-banner:hover {background: $white-color;}
   

@@ -41,7 +41,7 @@ const AddLogo = () => {
     if (e.target.files && e.target.files[0]) {
       let img = e.target.files[0];
 	  console.log("image is----->",img);
-	  img.name="mj.jpg";
+	  //img.name="mj.jpg";
 	  console.log("image is----->",img);
 
       setProfilePic(img);

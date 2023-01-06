@@ -50,14 +50,14 @@ var textColor = {
 };
 
 function NFTDetails() {
-  var bgImgStyle = {
-    backgroundImage: `url(${BGImg})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPositionX: "center",
-    backgroundPositionY: "center",
-    backgroundColor: "#000",
-  };
+  //var bgImgStyle = {
+  //  backgroundImage: `url(${BGImg})`,
+  //  backgroundRepeat: "no-repeat",
+  //  backgroundSize: "cover",
+  //  backgroundPositionX: "center",
+  //  backgroundPositionY: "center",
+  //  backgroundColor: "#000",
+  //};
 
   const { id } = useParams();
   const [NFTDetails, setNFTDetails] = useState([]);
@@ -1179,7 +1179,7 @@ function NFTDetails() {
       {loading ? <Spinner /> : ""}
       {isPlaceBidModal ? placeBidModal : ""}
       {isBuyNowModal ? buyNowModal : ""}
-      <section style={bgImgStyle} className="pdd_8">
+      <section className="pdd_8 bgImgStyle">
         <div className="container">
 
           <div className="row mb-5">

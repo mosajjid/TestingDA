@@ -48,13 +48,13 @@ function Sidebar() {
             </NavLink>
           </li>
         ) : null}
-         {(isSuperAdmin && isSuperAdmin()) ? (
+         {/*{(isSuperAdmin && isSuperAdmin()) ? (
           <li>
             <NavLink to={"/addLogo"} className="text-decoration-none text-light">
               <Formsvg /> Add Logo
             </NavLink>
           </li>
-        ) : null}
+        ) : null}*/}
 
         {(isSuperAdmin && isSuperAdmin()) ? (
           <li>

@@ -10,19 +10,19 @@ import { Link } from "@reach/router";
 
 function Marketplacecollection() {
   var register_bg = {
-    backgroundImage: `url(${MarketplaceBGIamge})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPositionX: "center",
-    backgroundPositionY: "center",
+    //backgroundImage: `url(${MarketplaceBGIamge})`,
+    //backgroundRepeat: "no-repeat",
+    //backgroundSize: "cover",
+    //backgroundPositionX: "center",
+    //backgroundPositionY: "center",
   };
   var bgImgStyle = {
-    backgroundImage: `url(${BGImg})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPositionX: "center",
-    backgroundPositionY: "center",
-    backgroundColor: "#000",
+    //backgroundImage: `url(${BGImg})`,
+    //backgroundRepeat: "no-repeat",
+    //backgroundSize: "cover",
+    //backgroundPositionX: "center",
+    //backgroundPositionY: "center",
+    //backgroundColor: "#000",
   };
 
   const [allCollections, setAllCollections] = useState([]);
@@ -143,7 +143,7 @@ function Marketplacecollection() {
   }
   return (
     <div>
-      <section className="register_hd pdd_12" style={register_bg}>
+      <section className="register_hd pdd_12" >
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -153,7 +153,7 @@ function Marketplacecollection() {
         </div>
       </section>
 
-      <section className="marketplace-tab pdd_8" style={bgImgStyle}>
+      <section className="marketplace-tab pdd_8" >
         <div className="container">
           <div className="row">
             <div className="col-md-12">

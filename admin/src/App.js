@@ -97,7 +97,7 @@ function App() {
 
             {currentUser || isSuperAdmin() ? <Route path="admins" exact element={<Admins />} /> : <Route path="/" />}
             {currentUser || isSuperAdmin() ? <Route path="addColor" exact element={<AddColor />} /> : <Route path="/" />}
-            {currentUser || isSuperAdmin() ? <Route path="addLogo" exact element={<AddLogo />} /> : <Route path="/" />}
+            {/*{currentUser || isSuperAdmin() ? <Route path="addLogo" exact element={<AddLogo />} /> : <Route path="/" />}*/}
 
             {isSuperAdmin() ? <Route path="AddMintableCollections" exact element={<AddMintableCollections />} /> : <Route path="/" />}
 

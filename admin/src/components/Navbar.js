@@ -349,12 +349,10 @@ const Navbar = (props) => {
 
       <div className="profile_box text-light me-auto d-flex align-items-center text-uppercase montserrat font-400">
         <div className="profile_img">
-          <img src={Logo} alt="" className="img-fluid" />
+          <img src={`${process.env.REACT_APP_ASSETS_BASE_PATH}assets/images/logo.png`} alt="" className="img-fluid" />
         </div>
         {props.model}
-        <Link className="logo" to="/">
-          Digital Arms
-        </Link>
+        
       </div>
       <ul className="p-0 m-0">
         <li>

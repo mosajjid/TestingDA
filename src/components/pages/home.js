@@ -27,35 +27,7 @@ const fadeInUp = keyframes`
     transform: translateY(0);
   }
 `;
-// const fadeIn = keyframes`
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// `;
 
-var bgImgStylesec1 = {
-  backgroundImage: "url(./img/background/banner-home.jpg)",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  backgroundPositionX: "center",
-  backgroundPositionY: "center",
-  backgroundColor: "#000",
-};
-
-var mint_bg = {
-  backgroundImage: "url(./img/mint/mint_bg.png)",
-};
-
-// var bgImgStyle2 = {
-//   backgroundImage: "url(./img/bg-img-2.png)",
-//   backgroundRepeat: "no-repeat",
-//   backgroundSize: "40%",
-//   backgroundPositionX: "0%",
-//   backgroundPositionY: "30vh",
-// };
 
 const Home = () => {
   const [upcomingMints, setUpcomingMints] = useState([]);
@@ -79,10 +51,7 @@ const Home = () => {
 
   return (
     <div>
-      <section
-        style={bgImgStylesec1}
-        className="jumbotron breadcumb no-bg h-vh pdd_8"
-      >
+      <section className="jumbotron breadcumb no-bg h-vh pdd_8 headerBaanner">
         <SliderMain />
       </section>
 
@@ -201,7 +170,7 @@ const Home = () => {
                     className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-xl-0 mb-4"
                     key={key}
                   >
-                    <div className="mint_box online_rotater" style={mint_bg}>
+                    <div className="mint_box online_rotater mintBackground" >
 
                       <Link to={`${!card.link ? `collection/${card._id}` : `multimintingPage/${card.link}`}`}>
                         <div className="mint_img">

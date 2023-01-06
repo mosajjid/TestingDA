@@ -33,15 +33,7 @@ extend({ OrbitControls });
 
 
 function Marketplace() {
-  var bgImgStyle = {
-    backgroundImage: `url(${BGImg})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPositionX: "center",
-    backgroundPositionY: "center",
-    backgroundColor: "#000",
-  };
-
+ 
 
 
 
@@ -63,13 +55,13 @@ function Marketplace() {
     document.getElementById("gridtwo").classList.remove("active");
   };
 
-  var register_bg = {
-    backgroundImage: `url(${bgImg})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPositionX: "center",
-    backgroundPositionY: "center",
-  };
+  //var register_bg = {
+  //  backgroundImage: `url(${bgImg})`,
+  //  backgroundRepeat: "no-repeat",
+  //  backgroundSize: "cover",
+  //  backgroundPositionX: "center",
+  //  backgroundPositionY: "center",
+  //};
 
   const [grid, setgrid] = useState("col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4");
 
@@ -238,7 +230,7 @@ function Marketplace() {
       {(loadMoreDisabled && allNFTs.length > 0)
         ? NotificationManager.info("No more items to load", "", 800)
         : ""} */}
-      <section className='register_hd pdd_12' style={register_bg}>
+      <section className='register_hd pdd_12 register_bg' >
         <div className='container'>
           <div className='row'>
             <div className='col-md-12'>
@@ -247,7 +239,7 @@ function Marketplace() {
           </div>
         </div>
       </section>
-      <section className='marketplacecollection pdd_8' style={bgImgStyle}>
+      <section className='marketplacecollection pdd_8 bgImgStyle' >
         <div className='container'>
           <div className='row'>
             <div className='col-lg-12'>

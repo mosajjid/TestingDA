@@ -176,7 +176,7 @@ if(searchedText || searchedText !== undefined)
 
   return (
     <div>
-      <section className="register_hd pdd_12" style={register_bg}>
+      <section className="register_hd pdd_12 register_bg" >
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -186,7 +186,7 @@ if(searchedText || searchedText !== undefined)
         </div>
       </section>
 
-      <section className="marketplace-tab pdd_8" style={bgImgStyle}>
+      <section className="marketplace-tab pdd_8 bgImgStyle" >
         <div className="container">
           <div className="row">
             <div className="col-md-12">
