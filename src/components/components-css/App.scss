@@ -64,7 +64,7 @@
 }
 
 .app-main{
-  background-image: url($images_path+"assets/images/background.png");
+  background-image: url($images_path+"assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: 50% 50%; */
@@ -1584,8 +1584,8 @@ button.slick-arrow.slick-next {
 
 /* About Section*/
 .about_learnmore {
-  background: linear-gradient(0deg, $box-hover-primary-color,$box-hover-primary-color);
-  border-top: 4px solid $box-hover-secondary-color;
+  background: linear-gradient(0deg, $about-box-bg-secondary-color, $about-box-bg-primary-color) ;
+  border-top: 4px solid $about-box-bg-primary-color;
   border-bottom: 4px solid $box-hover-secondary-color;
 }
 
@@ -1797,8 +1797,8 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 /* Footer */
 .footer-dark {
-  border-top: 5px solid $box-primary-color;
-  background:$box-hover-primary-color;
+  border-top: 5px solid $about-box-bg-primary-color;
+  background:linear-gradient(0deg, $about-box-bg-secondary-color, $about-box-bg-primary-color);
 }
 
 .text-widget p {
