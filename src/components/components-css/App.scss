@@ -1,6 +1,6 @@
 :root {
   /* --onboard-wallet-columns: 1; */
-  --onboard-connect-sidebar-background: #0d171e;
+  --onboard-connect-sidebar-background: $navbar-secondary-color;
   --onboard-wallet-columns: 1;
   --onboard-connect-sidebar-color: white;
 }
@@ -64,7 +64,7 @@
 }
 
 .app-main{
-  background-image: url($images_path+"assets/images/background.jpg");
+  background-image: url($images_path+"assets/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: 50% 50%; */
@@ -1043,8 +1043,8 @@ a {
 }
 
 .navbar {
-  background: linear-gradient(180deg, $box-primary-color 0%, $box-primary-color 19.27%, #0d171e 100%);
-  border-top: 15px solid #0d171e;
+  background: linear-gradient(180deg, $navbar-primary-color 0%, $navbar-primary-color 19.27%, $navbar-secondary-color 100%);
+  //border-top: 15px solid $navbar-secondary-color;
 }
 
 .main_btn,
@@ -1148,8 +1148,8 @@ header#myHeader {
 
 /** Subment **/
 .sub_menu {
-  background: #0d171e;
-  border: 1px solid #0d171e;
+  background: $navbar-secondary-color;
+  border: 1px solid $navbar-secondary-color;
   box-sizing: border-box;
   box-shadow: 0px 4px 10px #00000080;
   border-radius: 0px 0px 10px 10px;
@@ -1255,7 +1255,7 @@ header#myHeader {
 }
 
 .wallet_box:hover {
-  background: linear-gradient(120.91deg, $primary-color 1.08%, #f5aa3e 100.06%);
+  background: linear-gradient(120.91deg, $box-hover-primary-color 1.08%, $box-hover-secondary-color 100.06%);
   box-shadow: 0px 0px 10px $primary-color;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.05);
 }
@@ -1584,9 +1584,9 @@ button.slick-arrow.slick-next {
 
 /* About Section*/
 .about_learnmore {
-  background: linear-gradient(0deg, #0d171e, #0d171e);
-  border-top: 4px solid $box-secondary-color;
-  border-bottom: 4px solid $box-secondary-color;
+  background: linear-gradient(0deg, $box-hover-primary-color,$box-hover-primary-color);
+  border-top: 4px solid $box-hover-secondary-color;
+  border-bottom: 4px solid $box-hover-secondary-color;
 }
 
 .about_col {
@@ -1616,7 +1616,7 @@ button.slick-arrow.slick-next {
 
 /* Top Sallers */
 .author_list_box {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $box-primary-color;
   box-sizing: border-box;
   box-shadow: 2px 2px 4px #00000040;
@@ -1797,8 +1797,8 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 
 /* Footer */
 .footer-dark {
-  border-top: 5px solid $primary-color;
-  background: #0d171e;
+  border-top: 5px solid $box-primary-color;
+  background:$box-hover-primary-color;
 }
 
 .text-widget p {
@@ -1937,7 +1937,7 @@ button#btn-subscribe i.arrow_right {
 }
 
 .box-login {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   box-shadow: 0px 4px 4px #00000040;
   border-radius: 15px;
   filter: drop-shadow(4px 4px 26px rgba(239, 152, 29, 0.5));
@@ -1967,7 +1967,7 @@ button#btn-subscribe i.arrow_right {
 }
 
 #login_form input {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 5px;
@@ -2030,7 +2030,7 @@ label {
 .register_form form input:focus,
 .contact_form input,
 .contact_form input:focus {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 5px;
   height: 45px;
@@ -2039,7 +2039,7 @@ label {
 
 .contact_form textarea,
 .contact_form textarea:focus {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 5px;
   color: $white-color;
@@ -2052,7 +2052,7 @@ label {
   border-color: $primary-color;
   outline: 0;
   box-shadow: 0 0 0 0.25rem #ff8d02;
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color !important;
   border-radius: 5px;
 }
@@ -2087,7 +2087,7 @@ label {
 
 /* marketPlace Page*/
 .marketplace_box {
-  background: linear-gradient(180deg, $box-secondary-color 46.35%, #0d171e 100%);
+  background: linear-gradient(180deg, $box-secondary-color 46.35%, $navbar-secondary-color 100%);
   border: 3px solid $box-secondary-color;
   box-shadow: 0px 0px 4px #00000040;
   border-radius: 10px;
@@ -2098,7 +2098,7 @@ label {
   width: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
-  background: #0d171e;
+  background: $navbar-secondary-color;
 }
 
 .tab_btn {
@@ -2263,7 +2263,7 @@ button.filter_btn.active {
 
 .progress {
   border-radius: 33px;
-  background-color: #0d171e;
+  background-color: $navbar-secondary-color;
   border: 1px solid $box-primary-color;
 }
 
@@ -2464,7 +2464,7 @@ button.filter_btn.active {
 }
 
 .nft_detailnumber li span {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 39px;
@@ -2729,7 +2729,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
   background: linear-gradient(0deg,
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 0.1)),
-    #0d171e;
+    $navbar-secondary-color;
   border-radius: 5px;
   width: 40px;
   height: 40px;
@@ -2904,7 +2904,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .item_active a {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 40px;
@@ -2967,7 +2967,7 @@ background: -webkit-linear-gradient(270deg, hsla(206, 20%, 47%, 1) 0%, hsla(207,
 }
 
 .buy_btn {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px #00000080;
@@ -3152,7 +3152,7 @@ button.img_edit_btn {
 }
 
 .author_cart .dropdown-menu {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   box-shadow: 0px 4px 4px #00000080;
   border-radius: 0px 0px 10px 10px;
   padding: 10px;
@@ -3325,7 +3325,7 @@ span.special_text {
 }
 
 .profile_input {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $box-primary-color;
   border-radius: 5px;
   height: 45px;
@@ -3333,7 +3333,7 @@ span.special_text {
 }
 
 .profile_textarea {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $box-primary-color;
   border-radius: 5px;
   color: $white-color;
@@ -3367,7 +3367,7 @@ span.special_text {
 }
 
 .add_links_input {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $box-primary-color;
   border-radius: 5px;
 }
@@ -3441,7 +3441,7 @@ button.yellow_btn.yellow_dark {
 }
 
 .notification_table {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $box-primary-color;
   border-radius: 5px;
   width: 50%;
@@ -3477,7 +3477,7 @@ button.yellow_btn.yellow_dark {
 
 /* Blog */
 .blog_items {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid #25323c;
   box-sizing: border-box;
   border-radius: 10px;
@@ -3529,14 +3529,14 @@ button.yellow_btn.yellow_dark {
 }
 
 .pageprev.disabled span.page-link {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 50px 0px 0px 50px;
 }
 
 .pagination .page-link {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
 }
@@ -3710,7 +3710,7 @@ button.yellow_btn.yellow_dark {
 
 .form_comment input,
 .form_comment textarea {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 5px;
@@ -3776,7 +3776,7 @@ button.yellow_btn.yellow_dark {
 }
 
 form.help_form {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 50px;
   position: relative;
@@ -3822,7 +3822,7 @@ button#btn-submit {
 }
 
 .feature-box {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 40px;
@@ -3997,7 +3997,7 @@ button#btn-submit {
 }
 
 .mintevent {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 2.5px solid $primary-color;
   border-radius: 20px;
   max-width: 600px;
@@ -4115,7 +4115,7 @@ button#btn-submit {
 }
 
 .qt_selector input[type="text"] {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 5px;
   font-family: $font-family;
@@ -4325,7 +4325,7 @@ button#btn-submit {
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
-  color: $white-color;
+  color: $h2-color;
 }
 
 .title_bottom_border {
@@ -4393,7 +4393,7 @@ button#btn-submit {
 }
 
 .mint_date {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 2px solid $primary-color;
   border-radius: 10px;
   font-family: $font-family;
@@ -4456,7 +4456,7 @@ button.border_btn {
   /* width: 180px; */
   width: max-content;
   height: 45px;
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 50px;
@@ -4632,7 +4632,7 @@ a:hover {
 }
 
 .last_slide:hover {
-  background: linear-gradient(120.91deg, $primary-color 1.08%, #f5aa3e 100.06%);
+  background: linear-gradient(120.91deg, $primary-color 1.08%, $box-hover-secondary-color 100.06%);
   box-shadow: 0px 0px 10px $primary-color;
 }
 
@@ -4646,7 +4646,7 @@ a:hover {
 }
 
 .small_border_btn {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid #ff9901;
   border-radius: 20px;
 }
@@ -4697,7 +4697,7 @@ a:hover {
 }
 
 .filter {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 30px;
@@ -5286,7 +5286,7 @@ a:hover {
 }
 
 .filter {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 10px;
   padding: 30px;
@@ -5346,7 +5346,7 @@ a:hover {
 }
 
 .filter_border {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 5px;
   display: inline-block;
@@ -5366,7 +5366,7 @@ a:hover {
 }
 
 .filter_apply {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 5px;
   display: block;
@@ -5390,7 +5390,7 @@ a:hover {
 }
 
 .range_input input.form-control {
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid $primary-color;
   border-radius: 5px;
   width: 45%;
@@ -5472,7 +5472,7 @@ a:hover {
   border: 1px solid #ddd;
   border-radius: 100%;
   background: $white-color;
-  background: #0d171e;
+  background: $navbar-secondary-color;
   border: 1px solid #626262;
 }
 
@@ -5546,7 +5546,7 @@ a:hover {
 }
 
 .modal-content {
-  /* background: #0d171e; */
+  /* background: $navbar-secondary-color; */
   border: 1px solid $primary-color;
   background-image: url($images_path+"assets/images/background.jpg");
   background-repeat: no-repeat;
@@ -5680,7 +5680,7 @@ a:hover {
 }
 
 .buy_now:hover {
-  background-color: #0d171e !important;
+  background-color: $navbar-secondary-color !important;
   color: $primary-color !important;
 }
 
@@ -6770,7 +6770,7 @@ height: 100%;
 
 .img_3d>a,
 .img_3d model-viewer {
-/* background:linear-gradient(180deg,$box-primary-color 0%,#25323c 76.04%,#0d171e 100%); */
+/* background:linear-gradient(180deg,$box-primary-color 0%,#25323c 76.04%,$navbar-secondary-color 100%); */
 height:100%;
 box-shadow:2px 2px 5px #00000040;
 display: block;

@@ -23,7 +23,7 @@ const Footer = function () {
                 <div className="row">
                     <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-3">
                         <div className="widget text-widget">
-                            <img alt='' src={'../img/logo.svg'} className="mb-3" />
+                            <img alt='' src={`${process.env.REACT_APP_ASSETS_BASE_PATH}assets/images/logo.png`} className="mb-3" />
                             <p>The #1 NFT firearms supplier for interoperable gaming.</p>
                         </div>
                     </div>
