@@ -14,7 +14,7 @@ const LogInHeader = function () {
       <nav className="navbar navbar-expand-lg">
         <div className="nav-container container">
           <Link className="navbar-brand" to="/">
-            <img src={'../img/logo.svg'} className="img-fluid d-block" alt="logo" />
+            <img src={`${process.env.REACT_APP_ASSETS_BASE_PATH}assets/images/logo.png`} className="img-fluid d-block" alt="logo" />
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
